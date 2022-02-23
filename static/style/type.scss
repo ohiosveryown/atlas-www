@@ -1,0 +1,35 @@
+@import "~/static/style/grid.scss";
+
+@font-face {
+  font-family: "inter";
+  src: url("~/static/type/inter.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "founders";
+  src: url("~/static/type/founders.woff2") format("woff2");
+  font-display: block;
+}
+
+.inter {
+  font-family: "inter", var(--system-ui);
+  letter-spacing: -0.25px;
+}
+
+.founders {
+  font-family: "founders", var(--system-ui);
+}
+
+.uc {
+  text-transform: uppercase;
+}
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
