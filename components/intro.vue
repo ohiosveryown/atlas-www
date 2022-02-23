@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="intro inter">Turn customer data into product innovation</h1>
+    <h1 class="intro inter">TTurn customer data into product innovation</h1>
     <h2 class="intro founders">
       Atlas is a blazingly fast, extensible, intelligent,<br />
       single source of truth for all your customer&nbsp;information.
