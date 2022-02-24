@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="intro inter">TTurn customer data into product innovation</h1>
+    <h1 class="intro inter">Turn customer data into product innovation</h1>
     <h2 class="intro founders">
       Atlas is a blazingly fast, extensible, intelligent,<br />
       single source of truth for all your customer&nbsp;information.
@@ -25,6 +25,11 @@
         alt="product video preview image"
       />
     </figure>
+    <img
+      class="mesh-02"
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/tde4jszdhgjazn0zjpjb.png"
+      alt="mesh gradient"
+    />
   </header>
 </template>
 
@@ -69,10 +74,20 @@
 
   figure {
     position: relative;
+    z-index: var(--z2);
+    margin: auto;
+    box-shadow: 0px 5px 2.7px rgba(0, 0, 0, 0.102),
+      0px 12.6px 6.9px rgba(0, 0, 0, 0.146),
+      0px 25.7px 14.2px rgba(0, 0, 0, 0.184),
+      0px 52.9px 29.2px rgba(0, 0, 0, 0.228), 0px 145px 80px rgba(0, 0, 0, 0.33);
+    @include breakpoint(md) {
+      width: grid-width(10);
+    }
     img {
       pointer-events: none;
     }
     button {
+      --size: 7.2rem;
       position: absolute;
       z-index: var(--zmax);
       top: 0;
@@ -83,9 +98,8 @@
       border-radius: 100px;
       padding-top: 0.4rem;
       padding-left: 0.4rem;
-      width: 7.2rem;
-      height: 7.2rem;
-      box-shadow: 0px 0px 0px 20px #403274;
+      width: var(--size);
+      height: var(--size);
       transition: transform 300ms ease;
       transform: scale(0.64);
       will-change: transform;
@@ -94,15 +108,63 @@
         rgba(41, 66, 238, 0.24) 0%,
         rgba(160, 86, 255, 0.24) 98.96%
       );
-      &:hover {
-        @media (pointer: fine) {
-          transform: scale(1.2);
-        }
-      }
       @include breakpoint(md) {
         transform: scale(1);
-        box-shadow: 0px 0px 0px 40px #403274;
       }
+    }
+
+    button:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--size);
+      height: var(--size);
+      transform: scale(2);
+      border-radius: 100px;
+      transition: transform 300ms ease;
+      animation: pulse 2400ms linear infinite;
+      background: linear-gradient(
+        106.92deg,
+        rgba(41, 66, 238, 0.24) 0%,
+        rgba(160, 86, 255, 0.24) 98.96%
+      );
+    }
+  }
+
+  button:hover {
+    @media (pointer: fine) {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 1;
+    }
+    75% {
+      transform: scale(3);
+      opacity: 0.25;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  .mesh-02 {
+    position: relative;
+    z-index: var(--z1);
+    margin: -14rem auto 0;
+    transform: scale(0.25);
+    @include breakpoint(md) {
+      margin-top: -8rem;
+      transform: scale(0.5);
     }
   }
 </style>
