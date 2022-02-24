@@ -123,6 +123,8 @@
 
   a {
     font-size: 1.5rem;
+    /*     color: red;
+    mix-blend-mode: exclusion; */
   }
 
   @media (pointer: fine) {

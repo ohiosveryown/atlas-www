@@ -84,11 +84,10 @@
     margin-bottom: 2.4rem;
     @include breakpoint(md) {
       margin-bottom: 2.4rem;
-      font-size: 1.8vw;
+      font-size: 1.5vw;
     }
     @include breakpoint(lg) {
       margin-bottom: 3.2rem;
-      font-size: 1.4vw;
     }
   }
 
