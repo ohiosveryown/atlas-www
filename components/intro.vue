@@ -33,7 +33,7 @@
         src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/tde4jszdhgjazn0zjpjb.png"
         alt="mesh gradient"
       />
-      <div class="signup">
+      <div class="enter signup">
         <span class="inter">Get Started Today</span>
         <button class="inter">Sign Up</button>
       </div>
@@ -184,12 +184,13 @@
     position: relative;
     z-index: 9999;
     margin: 0 auto 8rem;
-    padding: 1.6rem 2.8rem;
+    padding: 1.4rem 2.4rem;
     width: max-content;
     text-align: center;
     font-size: 1.8rem;
     @include breakpoint(md) {
       margin-bottom: 19.2rem;
+      padding: 1.6rem 2.8rem;
       font-size: 2.2rem;
     }
 
