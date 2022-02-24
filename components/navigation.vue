@@ -88,6 +88,9 @@
 
   nav {
     display: flex;
+    position: sticky;
+    z-index: var(--zmax);
+    top: 2rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 3.2rem;

@@ -1,0 +1,163 @@
+<template>
+  <div class="wrapper">
+    <article>
+      <header class="inter">Jumpstart your productivity</header>
+      <p>
+        Use our import tool to move tickets and customer data in bulk from
+        legacy systems into Atlas – in no time.
+      </p>
+      <ul>
+        <li>
+          <img
+            class="icon"
+            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            alt=""
+          />
+          <span class="op-8">Import customer data</span>
+        </li>
+
+        <li>
+          <img
+            class="icon"
+            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            alt=""
+          />
+          <span class="op-8">Integrations</span>
+        </li>
+
+        <li>
+          <img
+            class="icon"
+            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            alt=""
+          />
+          <span class="op-8">Chat</span>
+        </li>
+      </ul>
+    </article>
+    <img
+      class="mesh"
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
+      alt=""
+    />
+    <img
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
+      alt=""
+      class="product hide--sm"
+    />
+  </div>
+</template>
+
+<style lang="scss" scoped>
+  @import "~static/style/grid.scss";
+
+  .wrapper {
+    display: flex;
+    position: relative;
+    z-index: var(--z1);
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 4.2rem 2.4rem;
+    width: 100%;
+    overflow: hidden;
+    background-blend-mode: difference;
+    background: linear-gradient(
+      106.92deg,
+      rgba(5, 15, 85, 0.28) 21.58%,
+      rgba(221, 86, 255, 0.28) 98.96%
+    );
+    @include breakpoint(md) {
+      padding: 5.6rem 4.8rem;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5.6rem 6.4rem;
+    }
+  }
+
+  header {
+    margin-bottom: 1.6rem;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    @include breakpoint(md) {
+      font-size: 2.4vw;
+    }
+    @include breakpoint(mdl) {
+      font-size: 2vw;
+    }
+  }
+
+  p {
+    margin-bottom: 3.2rem;
+    max-width: 47ch;
+    opacity: 0.72;
+    font-size: 1.7rem;
+    @include breakpoint(lg) {
+      font-size: 1.5vw;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    @include breakpoint(md) {
+      margin-bottom: 2.4rem;
+      font-size: 1.8vw;
+    }
+    @include breakpoint(lg) {
+      margin-bottom: 3.2rem;
+      font-size: 1.4vw;
+    }
+  }
+
+  .icon {
+    margin-right: 1.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .product {
+    margin-top: 4rem;
+    pointer-events: none;
+    filter: drop-shadow(8px 28px 32px rgba(0, 0, 0, 0.5));
+    @include breakpoint(md) {
+      margin-top: 0;
+      padding-left: 4.8rem;
+      align-self: center;
+      max-width: 52%;
+    }
+    @include breakpoint(mdl) {
+      align-self: center;
+      padding-left: 2rem;
+      max-width: 52%;
+    }
+    @include breakpoint(lg) {
+      padding-left: 4.8rem;
+      max-width: 52%;
+    }
+  }
+
+  .mesh {
+    position: absolute;
+    z-index: var(--z0);
+    top: 0rem;
+    right: 0rem;
+    opacity: 0.64;
+    transform: scale(2);
+    pointer-events: none;
+    @include breakpoint(md) {
+      transform: scale(1);
+      top: -20rem;
+      right: -40rem;
+    }
+    @include breakpoint(lg) {
+      right: -80rem;
+    }
+  }
+</style>
+
+<script>
+  export default {
+    props: ["heading", "subheading", "icon", "bg"],
+  }
+</script>

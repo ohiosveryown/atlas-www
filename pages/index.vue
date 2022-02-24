@@ -8,6 +8,21 @@
     <navigation />
     <main class="width">
       <intro />
+      <section>
+        <section-header
+          class="green hide--sm"
+          heading="Onboarding made"
+          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645721930/atlas/yuragpqjv0ldyzwxnput.png"
+          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645725400/atlas/akiielqlt2mojbtt7zfy.png"
+          subheading="Seamlessly import your existing customer data with our contact migration
+        tool and be up and running in no time."
+        />
+        <card-wide />
+      </section>
+
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non iure amet
+      illum quasi voluptas nam minus atque! Minus nemo quia quasi tenetur
+      nesciunt cumque, voluptas earum architecto, aliquid harum molestiae.
     </main>
   </div>
 </template>

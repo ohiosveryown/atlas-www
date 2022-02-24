@@ -38,7 +38,6 @@
         <button class="inter">Sign Up</button>
       </div>
     </div>
-    <h1>hello</h1>
   </section>
 </template>
 
@@ -72,9 +71,6 @@
     font-size: 2.6rem;
     line-height: 1.1;
     opacity: 0.64;
-    background: linear-gradient(to right, #fff 0%, #bbb 68%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     @include breakpoint(md) {
       margin-bottom: 11.2rem;
       font-size: 2.8vw;

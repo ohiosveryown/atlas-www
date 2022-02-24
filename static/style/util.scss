@@ -4,6 +4,17 @@
   border: 2px solid hotpink;
 }
 
+.hide--sm {
+  display: none;
+  @include breakpoint(md) {
+    display: inherit;
+  }
+}
+
+.green span {
+  color: #16d18e;
+}
+
 .pointer {
   &:hover {
     cursor: pointer;
