@@ -1,36 +1,45 @@
 <template>
-  <header>
-    <h1 class="intro inter">Turn customer data into product innovation</h1>
-    <h2 class="intro founders">
-      Atlas is a blazingly fast, extensible, intelligent,<br />
-      single source of truth for all your customer&nbsp;information.
-    </h2>
-    <figure class="intro">
-      <a
-        target="_blank"
-        href="https://www.loom.com/share/cae56be74f1c49d8b972f0d9e0a97162"
-      >
-        <button class="play">
-          <svg width="27" height="30" fill="none">
-            <path
-              opacity=".96"
-              d="M25.354 12.74c1.542.9 1.542 3.128 0 4.027L4.344 29.023C2.79 29.93.839 28.81.839 27.01V2.498C.84.699 2.79-.422 4.344.485l21.01 12.256Z"
-              fill="#fff"
-            />
-          </svg>
-        </button>
-      </a>
+  <section>
+    <header>
+      <h1 class="enter inter">Turn customer data into product innovation</h1>
+      <h2 class="enter founders">
+        Atlas is a blazingly fast, extensible, intelligent,<br />
+        single source of truth for all your customer&nbsp;information.
+      </h2>
+    </header>
+    <div>
+      <figure class="enter">
+        <a
+          target="_blank"
+          href="https://www.loom.com/share/cae56be74f1c49d8b972f0d9e0a97162"
+        >
+          <button class="play">
+            <svg width="27" height="30" fill="none">
+              <path
+                opacity=".96"
+                d="M25.354 12.74c1.542.9 1.542 3.128 0 4.027L4.344 29.023C2.79 29.93.839 28.81.839 27.01V2.498C.84.699 2.79-.422 4.344.485l21.01 12.256Z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
+        </a>
+        <img
+          src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645649721/atlas/ywlilhruxakdu2zublsc.png"
+          alt="product video preview image"
+        />
+      </figure>
       <img
-        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645649721/atlas/ywlilhruxakdu2zublsc.png"
-        alt="product video preview image"
+        class="enter mesh-02"
+        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/tde4jszdhgjazn0zjpjb.png"
+        alt="mesh gradient"
       />
-    </figure>
-    <img
-      class="mesh-02"
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/tde4jszdhgjazn0zjpjb.png"
-      alt="mesh gradient"
-    />
-  </header>
+      <div class="signup">
+        <span class="inter">Get Started Today</span>
+        <button class="inter">Sign Up</button>
+      </div>
+    </div>
+    <h1>hello</h1>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -167,13 +176,69 @@
       transform: scale(0.5);
     }
   }
+
+  .signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    margin: 0 auto 8rem;
+    padding: 1.6rem 2.8rem;
+    width: max-content;
+    text-align: center;
+    font-size: 1.8rem;
+    @include breakpoint(md) {
+      margin-bottom: 19.2rem;
+      font-size: 2.2rem;
+    }
+
+    button {
+      margin-left: 6vw;
+      padding: 1.2rem 2.8rem;
+      font-size: 0.8em;
+      color: #7f7fff;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.12);
+      transition: all 300ms ease;
+      cursor: pointer;
+      @include breakpoint(md) {
+        margin-left: 12vw;
+        font-size: 1.6rem;
+      }
+
+      &:hover {
+        @media (pointer: fine) {
+          transform: scale(1.05);
+          background: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+
+  .signup::before {
+    content: "";
+    position: absolute;
+    z-index: var(--zmin);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 1px;
+    background: linear-gradient(45deg, #2942ee, #a056ff);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 </style>
 
 <script>
   export default {
     methods: {
-      introEnter() {
-        gsap.from(".intro", {
+      enter() {
+        gsap.from(".enter", {
           opacity: 0,
           duration: 1.2,
           delay: 0.75,
@@ -185,7 +250,7 @@
       },
     },
     mounted() {
-      this.introEnter()
+      this.enter()
     },
   }
 </script>
