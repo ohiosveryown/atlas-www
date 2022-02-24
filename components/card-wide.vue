@@ -24,7 +24,7 @@
       </ul>
     </article>
     <img class="mesh" :src="mesh" />
-    <img class="product hide--sm" :src="product" alt="" />
+    <img class="product" :src="product" alt="" />
   </div>
 </template>
 
@@ -36,6 +36,7 @@
     position: relative;
     z-index: var(--z1);
     flex-direction: column;
+    margin-bottom: 4.2rem;
     border-radius: 16px;
     padding: 4.2rem 2.4rem;
     width: 100%;
