@@ -8,43 +8,23 @@
       </p>
       <ul>
         <li>
-          <img
-            class="icon"
-            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
-            alt=""
-          />
+          <img class="icon" :src="icon01" alt="" />
           <span class="op-8">Import customer data</span>
         </li>
 
         <li>
-          <img
-            class="icon"
-            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
-            alt=""
-          />
+          <img class="icon" :src="icon02" alt="" />
           <span class="op-8">Integrations</span>
         </li>
 
         <li>
-          <img
-            class="icon"
-            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
-            alt=""
-          />
+          <img class="icon" :src="icon03" alt="" />
           <span class="op-8">Chat</span>
         </li>
       </ul>
     </article>
-    <img
-      class="mesh"
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
-      alt=""
-    />
-    <img
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
-      alt=""
-      class="product hide--sm"
-    />
+    <img class="mesh" :src="mesh" />
+    <img class="product hide--sm" :src="product" alt="" />
   </div>
 </template>
 
@@ -60,6 +40,7 @@
     padding: 4.2rem 2.4rem;
     width: 100%;
     overflow: hidden;
+    box-shadow: 0px 4px 36px 6px rgba(38, 38, 38, 0.96);
     background-blend-mode: difference;
     background: linear-gradient(
       106.92deg,
@@ -158,6 +139,6 @@
 
 <script>
   export default {
-    props: ["heading", "subheading", "icon", "bg"],
+    props: ["icon01", "icon02", "icon03", "mesh", "product"],
   }
 </script>

@@ -17,7 +17,13 @@
           subheading="Seamlessly import your existing customer data with our contact migration
         tool and be up and running in no time."
         />
-        <card-wide />
+        <card-wide
+          icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+          icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+          icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+          mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
+          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
+        />
       </section>
 
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non iure amet
