@@ -31,7 +31,7 @@
   .wrapper {
     display: flex;
     position: relative;
-    z-index: var(--z1);
+    z-index: var(--z4);
     flex-direction: column;
     margin-bottom: 4.2rem;
     border-radius: 16px;

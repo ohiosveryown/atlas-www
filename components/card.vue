@@ -49,6 +49,10 @@
   p {
     margin-bottom: 4rem;
     opacity: 0.72;
+    @include breakpoint(lg) {
+      max-width: 48ch;
+      font-size: 2.2rem;
+    }
   }
 
   .product {

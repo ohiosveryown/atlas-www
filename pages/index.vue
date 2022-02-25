@@ -65,7 +65,7 @@
         />
 
         <card-wide
-          heading="All the tools you need, in one place"
+          heading="Tools to foster customer relationships"
           subheading="Chat, ticketing, and automated communications all in one place.
           See the whole conversation with your customers."
           icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
@@ -77,6 +77,50 @@
           liThree="Multi-channel responses (Coming Soon)"
           product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801957/atlas/bfqlxpaokdjxhe9osr0h.png"
         />
+        <div class="horizontal-scroll">
+          <card
+            class="card--md"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            heading="Customer Timeline"
+            subheading="Supercharge your daily routine with batch actions, shortcuts, and automations."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645804763/atlas/aju2slf14collvqsjsna.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/nnlfwnrw6g1mlqtu7uhd.png"
+          />
+
+          <card
+            class="card--md"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            heading="Ticket History"
+            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645804930/atlas/ttjzteycczwkxhcqhgb9.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+          />
+
+          <card
+            class="card--md"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            heading="API"
+            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805395/atlas/ximk29zlvf4jzrxvva5h.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805258/atlas/izmgylyhimf7hxszd6uu.png"
+          />
+
+          <card
+            class="card--md"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            heading="Smarter insights"
+            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742402/atlas/gr8lf3spcuhj7mbe0j5l.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
+          />
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </section>
+
+      <section>
+        <card-full />
       </section>
 
       <p class="mt-9">
@@ -121,8 +165,58 @@
       width: grid-width(6.5);
     }
   }
+
+  .progress-container {
+    position: relative;
+    margin: 2rem auto 20rem;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 5px;
+    background: linear-gradient(106.92deg, #2942ee 0%, #a056ff 98.96%);
+    border-radius: 50px;
+    width: 0%;
+  }
+
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    * {
+      margin-right: 4.8rem;
+      flex: 0 0 grid-width(9);
+      @include breakpoint(md) {
+        flex: 0 0 grid-width(5);
+      }
+    }
+  }
+
+  .horizontal-scroll::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 </style>
 
 <script>
-  export default {}
+  export default {
+    mounted() {
+      const progressBar = document.querySelector(".progress-bar")
+      const section = document.querySelector(".horizontal-scroll")
+      let currentPixel = section.scrollLeft
+
+      section.addEventListener("scroll", () => {
+        const winScroll = section.scrollLeft || section.scrollLeft
+        const width = section.scrollWidth - section.clientWidth
+        const scrolled = (winScroll / width) * 100
+        progressBar.style.width = scrolled + "%"
+
+        this.scrollpos = section.scrollLeft
+      })
+    },
+  }
 </script>

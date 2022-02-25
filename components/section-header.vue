@@ -71,9 +71,29 @@
     margin: 0 auto;
     transform: scale(0.75);
     pointer-events: none;
+    animation: rotateSm 32s linear infinite;
     @include breakpoint(md) {
+      animation: rotateMd 32s linear infinite;
       top: -32rem;
       transform: scale(0.5);
+    }
+  }
+
+  @keyframes rotateSm {
+    from {
+      transform: scale(0.75) rotate(0);
+    }
+    to {
+      transform: scale(0.75) rotate(360deg);
+    }
+  }
+
+  @keyframes rotateMd {
+    from {
+      transform: scale(0.5) rotate(0);
+    }
+    to {
+      transform: scale(0.5) rotate(360deg);
     }
   }
 </style>
