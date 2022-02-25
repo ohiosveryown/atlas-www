@@ -2,7 +2,7 @@
   <header>
     <h3 class="inter">
       {{ heading }}
-      <span>easy</span>
+      <span>{{ highlight }}</span>
       <img class="icon" :src="icon" alt="" />
     </h3>
     <h4 class="founders">
@@ -80,6 +80,6 @@
 
 <script>
   export default {
-    props: ["heading", "subheading", "icon", "bg"],
+    props: ["heading", "subheading", "highlight", "icon", "bg"],
   }
 </script>

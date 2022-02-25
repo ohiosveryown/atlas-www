@@ -1,25 +1,22 @@
 <template>
   <div class="wrapper">
     <article>
-      <header class="inter">Jumpstart your productivity</header>
-      <p>
-        Use our import tool to move tickets and customer data in bulk from
-        legacy systems into Atlas – in no time.
-      </p>
+      <header class="inter">{{ heading }}</header>
+      <p>{{ subheading }}</p>
       <ul>
         <li>
           <img class="icon" :src="icon01" alt="" />
-          <span class="op-8">Import customer data</span>
+          <span class="op-8">{{ liOne }}</span>
         </li>
 
         <li>
           <img class="icon" :src="icon02" alt="" />
-          <span class="op-8">Integrations</span>
+          <span class="op-8">{{ liTwo }}</span>
         </li>
 
         <li>
           <img class="icon" :src="icon03" alt="" />
-          <span class="op-8">Chat</span>
+          <span class="op-8">{{ liThree }}</span>
         </li>
       </ul>
     </article>
@@ -139,6 +136,17 @@
 
 <script>
   export default {
-    props: ["icon01", "icon02", "icon03", "mesh", "product"],
+    props: [
+      "icon01",
+      "icon02",
+      "icon03",
+      "mesh",
+      "product",
+      "heading",
+      "subheading",
+      "liOne",
+      "liTwo",
+      "liThree",
+    ],
   }
 </script>
