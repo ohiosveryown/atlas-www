@@ -71,9 +71,9 @@
     margin: 0 auto;
     transform: scale(0.75);
     pointer-events: none;
-    animation: rotateSm 32s linear infinite;
+    /*     animation: rotateSm 32s linear infinite; */
     @include breakpoint(md) {
-      animation: rotateMd 32s linear infinite;
+      /*       animation: rotateMd 32s linear infinite; */
       top: -32rem;
       transform: scale(0.5);
     }

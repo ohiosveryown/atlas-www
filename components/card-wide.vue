@@ -38,7 +38,7 @@
     padding: 4.2rem 2.4rem;
     width: 100%;
     overflow: hidden;
-    box-shadow: 0px 4px 36px 6px rgba(38, 38, 38, 0.96);
+    box-shadow: var(--elevation);
     background-blend-mode: difference;
     background: linear-gradient(
       106.92deg,

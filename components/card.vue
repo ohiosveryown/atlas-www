@@ -21,7 +21,7 @@
     border-radius: 16px;
     margin-bottom: 3.2rem;
     padding: 3.2rem 2.4rem 0;
-    box-shadow: 0 4px 36px 6px rgba(38, 38, 38, 0.96);
+    box-shadow: var(--elevation);
     overflow: hidden;
     @include breakpoint(md) {
       padding: 3.2rem 3.2rem 0;
@@ -69,6 +69,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.64;
 
     img {
       width: 100%;
