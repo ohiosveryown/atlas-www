@@ -42,11 +42,11 @@
       class="product"
     />
 
-    <!--     <img
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645808336/atlas/n4sovunhp3qnpslk4weo.png"
+    <img
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645844209/atlas/bza9stfzsplif3iwbgny.png"
       alt=""
       class="mesh"
-    /> -->
+    />
   </div>
 </template>
 
@@ -77,6 +77,7 @@
     font-size: 2.4rem;
     line-height: 1.2;
     @include breakpoint(md) {
+      line-height: 1.1;
       font-size: 3.2vw;
     }
     @include breakpoint(lg) {
@@ -106,11 +107,12 @@
     @include breakpoint(md) {
       width: 4.2rem;
       height: 4.2rem;
-      margin-top: -0.5rem;
     }
   }
 
   .product {
+    position: relative;
+    z-index: var(--z2);
     box-shadow: 0px 6.7px 5.3px rgba(0, 0, 0, 0.133),
       0px 22.3px 17.9px rgba(0, 0, 0, 0.197), 0px 100px 80px rgba(0, 0, 0, 0.33);
 
@@ -126,8 +128,9 @@
   }
 
   .mesh {
+    border: 1px solid pink;
     position: absolute;
-    z-index: var(--z-1);
+    z-index: var(--z1);
     top: 0;
     right: 0;
   }

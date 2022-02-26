@@ -37,7 +37,7 @@
 
   header {
     margin-bottom: 1.2rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     @include breakpoint(md) {
       font-size: 2.4vw;
     }
@@ -49,9 +49,10 @@
   p {
     margin-bottom: 4rem;
     opacity: 0.72;
+    font-size: 1.7rem;
     @include breakpoint(lg) {
       max-width: 48ch;
-      font-size: 2.2rem;
+      font-size: 1.5vw;
     }
   }
 

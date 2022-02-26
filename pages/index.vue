@@ -2,7 +2,7 @@
   <div class="app">
     <img
       class="mesh mesh-01"
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/wlzmlix0m0xksjk4pihj.png"
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645844457/atlas/lp0neont7qe3uhdnorna.png"
       alt="mesh gradient"
     />
     <navigation />
@@ -188,10 +188,12 @@
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    cursor: grab;
     * {
-      margin-right: 4.8rem;
-      flex: 0 0 grid-width(9);
+      margin-right: 2rem;
+      flex: 0 0 grid-width(10);
       @include breakpoint(md) {
+        margin-right: 4.8rem;
         flex: 0 0 grid-width(5);
       }
     }
@@ -208,6 +210,9 @@
       const progressBar = document.querySelector(".progress-bar")
       const section = document.querySelector(".horizontal-scroll")
       let currentPixel = section.scrollLeft
+      let isDown = false
+      let startX
+      let scrollLeft
 
       section.addEventListener("scroll", () => {
         const winScroll = section.scrollLeft || section.scrollLeft
@@ -216,6 +221,33 @@
         progressBar.style.width = scrolled + "%"
 
         this.scrollpos = section.scrollLeft
+      })
+
+      section.addEventListener("mousedown", (e) => {
+        isDown = true
+        slider.classList.add("active")
+        startX = e.pageX - slider.offsetLeft
+        scrollLeft = slider.scrollLeft
+      })
+
+      section.addEventListener("mousedown", (e) => {
+        section.style.cursor = "grabbing"
+        isDown = true
+        startX = e.pageX - section.offsetLeft
+        scrollLeft = section.scrollLeft
+      })
+
+      section.addEventListener("mouseup", () => {
+        section.style.cursor = "grab"
+        isDown = false
+      })
+
+      section.addEventListener("mousemove", (e) => {
+        if (!isDown) return
+        e.preventDefault()
+        const x = e.pageX - section.offsetLeft
+        const walk = (x - startX) * 1
+        section.scrollLeft = scrollLeft - walk
       })
     },
   }
