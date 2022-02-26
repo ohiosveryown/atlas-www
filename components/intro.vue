@@ -178,7 +178,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 9999;
     margin: 0 auto 8rem;
     padding: 1.4rem 2.4rem;
     width: max-content;
