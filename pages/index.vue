@@ -85,7 +85,7 @@
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="Customer Timeline"
             subheading="Supercharge your daily routine with batch actions, shortcuts, and automations."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645852931/atlas/icrjqlzfwg8rttr4qct1.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/nnlfwnrw6g1mlqtu7uhd.png"
           />
 
@@ -94,7 +94,7 @@
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="Ticket History"
             subheading="Convert customer conversations into data driven insights to drive your product roadmap."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645852931/atlas/ifqbq3hsmvjfagnpmkgb.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sgeakeifve1kpzr2jr5t.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
           />
 
@@ -103,7 +103,7 @@
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="API"
             subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645852931/atlas/ih3p670ijc8qfawdjgze.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/jigxvku2pqtaoat5w5b3.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805258/atlas/izmgylyhimf7hxszd6uu.png"
           />
 
@@ -112,7 +112,7 @@
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="Smarter insights"
             subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645852931/atlas/icrjqlzfwg8rttr4qct1.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
           />
         </div>
@@ -234,7 +234,6 @@
       let observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.intersectionRatio > 0) {
-            console.log("in view")
             entry.target.classList.add("active")
           }
         })
@@ -285,7 +284,7 @@
         if (!isDown) return
         e.preventDefault()
         const x = e.pageX - section.offsetLeft
-        const walk = (x - startX) * 1
+        const walk = (x - startX) * 0.8
         section.scrollLeft = scrollLeft - walk
       })
     },
