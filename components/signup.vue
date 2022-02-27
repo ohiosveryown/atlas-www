@@ -2,7 +2,7 @@
   <div class="wrapper">
     <header>
       <div class="headings">
-        <span class="inter heading">{{ headingOne }}</span>
+        <span class="inter heading one">{{ headingOne }}</span>
         <span class="inter heading">{{ headingTwo }}</span>
       </div>
       <span class="founders subheading">{{ subheading }}</span>
@@ -59,7 +59,17 @@
     flex-direction: column;
     @include breakpoint(md) {
       flex-direction: row;
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(mdl) {
       margin-bottom: 2.4rem;
+    }
+  }
+
+  .one {
+    @include breakpoint(md) {
+      margin-right: 0.6rem;
     }
   }
 
@@ -70,6 +80,7 @@
       font-size: 2.4vw;
     }
   }
+
   .subheading {
     margin: 0 auto 2.4rem;
     opacity: 0.72;
@@ -77,6 +88,9 @@
     font-size: 2.3rem;
     @include breakpoint(md) {
       max-width: 44ch;
+      font-size: 2.4vw;
+    }
+    @include breakpoint(mdl) {
       font-size: 2vw;
     }
   }
@@ -93,7 +107,13 @@
     font-size: 1.3rem;
     transition: filter 300ms ease;
     will-change: filter;
+
     @include breakpoint(md) {
+      width: max-content;
+      padding: 1.6rem 4rem;
+    }
+
+    @include breakpoint(mdl) {
       width: max-content;
       padding: 2rem 4rem;
       font-size: 2rem;

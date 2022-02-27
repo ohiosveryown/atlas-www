@@ -96,11 +96,19 @@
     line-height: 1.1;
     font-size: 2.4rem;
     @include breakpoint(md) {
+      margin-bottom: 2.4rem;
+      max-width: 46ch;
+      font-size: 2.9vw;
+    }
+
+    @include breakpoint(mdl) {
+      margin-bottom: 3.2rem;
       max-width: 46ch;
       font-size: 2.8vw;
     }
+
     @include breakpoint(lg) {
-      margin-bottom: 2.8rem;
+      margin-bottom: 3.2rem;
       line-height: 0.92;
     }
   }
@@ -138,8 +146,13 @@
     height: 3.2rem;
     pointer-events: none;
     @include breakpoint(md) {
+      margin-top: -0.8rem;
       width: 4.2rem;
       height: 4.2rem;
+    }
+
+    @include breakpoint(mdl) {
+      margin-top: 0;
     }
   }
 
@@ -170,6 +183,11 @@
     position: absolute;
     top: -10rem;
     @include breakpoint(md) {
+      top: -12rem;
+      transform: scale(1.1);
+    }
+
+    @include breakpoint(mdl) {
       top: -20rem;
       transform: scale(1.1);
     }

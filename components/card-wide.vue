@@ -70,6 +70,7 @@
     max-width: 47ch;
     opacity: 0.72;
     font-size: 1.7rem;
+
     @include breakpoint(lg) {
       font-size: 1.5vw;
     }
@@ -102,13 +103,15 @@
       margin-top: 0;
       padding-left: 4.8rem;
       align-self: center;
-      max-width: 52%;
+      max-width: 56%;
     }
+
     @include breakpoint(mdl) {
       align-self: center;
       padding-left: 2rem;
       max-width: 52%;
     }
+
     @include breakpoint(lg) {
       padding-left: 4.8rem;
       max-width: 52%;

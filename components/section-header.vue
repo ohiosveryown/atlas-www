@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
     font-size: 2.4rem;
     @include breakpoint(md) {
       font-size: 3.2vw;

@@ -66,7 +66,7 @@
         />
 
         <card-wide
-          class="scroll-target"
+          class="scroll-targetttt"
           heading="Tools to foster customer relationships"
           subheading="Chat, ticketing, and automated communications all in one place.
           See the whole conversation with your customers."
