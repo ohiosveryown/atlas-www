@@ -137,6 +137,15 @@
         <testimonials />
       </section>
 
+      <section>
+        <signup
+          headingOne="Work smarter."
+          headingTwo="Get started today."
+          subheading="Sign up with Atlas today to get introductory pricing.
+        No commitment 90-day money back guarentee."
+        />
+      </section>
+
       <p class="mt-9">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non iure amet
         illum quasi voluptas nam minus atque! Minus nemo quia quasi tenetur

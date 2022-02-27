@@ -34,13 +34,12 @@
   @import "~static/style/grid.scss";
 
   ul {
-    display: flex;
-  }
-  li {
-  }
-
-  li:nth-child(2) {
-    margin-top: 11.2rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 11.2rem;
+    @include breakpoint(md) {
+      margin-bottom: 21.2rem;
+    }
   }
 </style>
 

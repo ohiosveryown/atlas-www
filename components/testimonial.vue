@@ -37,14 +37,16 @@
   }
 
   blockquote {
-    max-width: 52ch;
     padding: 2.4rem;
+    margin-bottom: 4.2rem;
     border-radius: 100px;
-    /*     font-size: 1.4rem; */
-    background: linear-gradient(99.89deg, #811313 0%, #081869 100%);
+    background: linear-gradient(100deg, #811313 0%, #081869 100%);
     box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.38),
-      0px 23.1111px 25.4815px rgba(0, 0, 0, 0.230815),
-      0px 4.88889px 6.51852px rgba(0, 0, 0, 0.149185);
+      0px 23px 25px rgba(0, 0, 0, 0.24), 0px 4px 6px rgba(0, 0, 0, 0.14);
+    @include breakpoint(md) {
+      max-width: 52ch;
+      width: max-content;
+    }
   }
 </style>
 
