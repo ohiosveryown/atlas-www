@@ -57,10 +57,12 @@
 
   .wrapper {
     position: relative;
+    margin-bottom: 14rem;
     @include breakpoint(md) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 20rem;
     }
   }
 
