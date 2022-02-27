@@ -134,23 +134,19 @@
           bg=""
           subheading="We've helped companies both large and small connect with their customers to gain trust, solve issues, and foster better relationships."
         />
-        <testimonials />
+        <testimonials class="scroll-target" />
       </section>
 
       <section>
         <signup
+          class="scroll-target"
           headingOne="Work smarter."
           headingTwo="Get started today."
-          subheading="Sign up with Atlas today to get introductory pricing.
-        No commitment 90-day money back guarentee."
+          subheading="Sign up today and make customer interaction easier, and smarter."
         />
       </section>
 
-      <p class="mt-9">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non iure amet
-        illum quasi voluptas nam minus atque! Minus nemo quia quasi tenetur
-        nesciunt cumque, voluptas earum architecto, aliquid harum molestiae.
-      </p>
+      <foot />
     </main>
   </div>
 </template>

@@ -7,6 +7,9 @@
       </div>
       <span class="founders subheading">{{ subheading }}</span>
     </header>
+
+    <button>Sign Up</button>
+
     <img
       src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645989915/atlas/zedgbhejc60e4snshghg.png"
       alt=""
@@ -21,26 +24,33 @@
   .wrapper {
     position: relative;
     overflow: hidden;
+    margin: 0 auto 12rem;
     border-radius: 18px;
     border: 1px solid #6363ff;
     text-align: center;
     padding: 6.4rem 2rem;
+    box-shadow: var(--elevation);
+    transition: transform 300ms ease;
+    will-change: transform;
     background: linear-gradient(
       90deg,
       #040321 0%,
-      rgba(9, 11, 81, 0.490216) 50.98%,
+      rgba(9, 11, 81, 0.490216) 50%,
       #06033a 100%
     );
+
+    @include breakpoint(md) {
+      margin-bottom: 20rem;
+    }
+
+    @include breakpoint(lg) {
+      width: 80%;
+    }
   }
 
   header {
     display: flex;
     flex-direction: column;
-    /*     background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1645989915/atlas/zedgbhejc60e4snshghg.png")
-      no-repeat center center; */
-    @include breakpoint(md) {
-      padding: 8rem 0;
-    }
   }
 
   .headings {
@@ -61,13 +71,41 @@
     }
   }
   .subheading {
-    margin: auto;
+    margin: 0 auto 2.4rem;
     opacity: 0.72;
     line-height: 1.1;
     font-size: 2.3rem;
     @include breakpoint(md) {
       max-width: 44ch;
       font-size: 2vw;
+    }
+  }
+
+  button {
+    position: relative;
+    z-index: var(--z2);
+    padding: 1.6rem 4rem;
+    width: 56%;
+    border-radius: 100px;
+    background: linear-gradient(106deg, #2942ee 0%, #a056ff 98%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: filter 300ms ease;
+    will-change: filter;
+    @include breakpoint(md) {
+      width: max-content;
+      padding: 2rem 4rem;
+      font-size: 2rem;
+    }
+  }
+
+  @media (pointer: fine) {
+    .wrapper:hover {
+      transform: scale(1.01);
+    }
+    button:hover {
+      filter: hue-rotate(20deg);
     }
   }
 
