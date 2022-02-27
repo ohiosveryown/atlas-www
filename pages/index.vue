@@ -7,7 +7,10 @@
     />
     <navigation />
     <main class="width">
-      <intro />
+      <intro
+        heading="Give your customers superhuman support"
+        subheading="Atlas is a blazingly fast, modern support tool and system of record for all your customers interactions."
+      />
       <section>
         <section-header
           class="scroll-target green hide--sm"

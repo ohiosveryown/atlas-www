@@ -1,10 +1,9 @@
 <template>
   <section>
     <header>
-      <h1 class="enter inter">Turn customer data into product innovation</h1>
+      <h1 class="enter inter">{{ heading }}</h1>
       <h2 class="enter founders">
-        Atlas is a blazingly fast, extensible, intelligent,<br />
-        single source of truth for all your customer&nbsp;information.
+        {{ subheading }}
       </h2>
     </header>
     <div>
@@ -57,21 +56,32 @@
     background: linear-gradient(to right, #0e2ae4 0%, #a056ff 68%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-weight: 500;
     line-height: 1;
     @include breakpoint(md) {
       margin-bottom: 4rem;
       font-size: 6.4vw;
     }
+
+    @include breakpoint(lg) {
+      margin-bottom: 4rem;
+      font-size: 5.5vw;
+    }
   }
 
   h2 {
-    margin-bottom: 4.8rem;
+    margin: 0 auto 4.8rem;
     font-size: 2.6rem;
     line-height: 1.1;
     opacity: 0.64;
     @include breakpoint(md) {
+      max-width: 40ch;
+      margin-bottom: 8rem;
+      font-size: 2.8vw;
+    }
+
+    @include breakpoint(lg) {
       margin-bottom: 11.2rem;
       font-size: 2.8vw;
     }
@@ -88,9 +98,11 @@
     @include breakpoint(md) {
       width: grid-width(10);
     }
+
     img {
       pointer-events: none;
     }
+
     button {
       --size: 7.2rem;
       position: absolute;
@@ -168,7 +180,7 @@
     margin: -14rem auto 0;
     transform: scale(0.25);
     @include breakpoint(md) {
-      margin-top: -8rem;
+      margin-top: -14rem;
       transform: scale(0.5);
     }
   }
@@ -178,12 +190,13 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 0 auto 8rem;
+    margin: -8rem auto 8rem;
     padding: 1.4rem 2.4rem;
     width: max-content;
     text-align: center;
     font-size: 1.8rem;
     @include breakpoint(md) {
+      margin-top: 0;
       margin-bottom: 19.2rem;
       padding: 1.6rem 2.8rem;
       font-size: 2.2rem;
@@ -232,6 +245,7 @@
 
 <script>
   export default {
+    props: ["heading", "subheading"],
     methods: {
       enter() {
         gsap.from(".enter", {
