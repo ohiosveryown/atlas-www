@@ -33,8 +33,8 @@
         alt="mesh gradient"
       />
       <div class="enter signup">
-        <span class="inter">Get Started Today</span>
-        <button class="inter">Sign Up</button>
+        <span class="inter">Schedule a Demo</span>
+        <button class="inter">Book Time</button>
       </div>
     </div>
   </section>
