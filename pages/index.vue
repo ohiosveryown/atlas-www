@@ -10,7 +10,7 @@
       <main class="width">
         <intro
           heading="Give your customers superhuman support"
-          subheading="Atlas is a blazingly fast, modern support tool and a system of record for all your customers interactions."
+          subheading="Atlas is a blazingly fast, modern support platform, helping identify and diagnose customer experience and interaction."
         />
         <section>
           <section-header
