@@ -1,5 +1,22 @@
 <template>
   <div class="wrapper">
+    <header>
+      <h3 class="inter">
+        Trusted by
+        <span
+          >trailblazers
+          <img
+            class="icon"
+            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985210/atlas/kenyqx0zj4hatsqnh1dq.png"
+            alt=""
+        /></span>
+      </h3>
+      <h4 class="founders">
+        We've helped companies both large and small connect with their
+        customers, and are backed by <span class="color">YCombinator</span>.
+      </h4>
+      <img :src="bg" alt="" class="bg" />
+    </header>
     <ul>
       <testimonial
         avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
@@ -34,6 +51,75 @@
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
+
+  header {
+    position: relative;
+    margin: 0 auto 7.2rem;
+    text-align: center;
+  }
+
+  h3 {
+    position: relative;
+    z-index: var(--z2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    font-size: 2.4rem;
+    @include breakpoint(md) {
+      flex-direction: row;
+      font-size: 3.2vw;
+    }
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        margin-left: 0.75vw;
+      }
+    }
+  }
+
+  span {
+    margin: 0 1.5vw;
+    @include breakpoint(md) {
+      margin: 0 0.8vw;
+    }
+  }
+
+  h4 {
+    position: relative;
+    z-index: var(--z2);
+    margin: auto;
+    line-height: 1.1;
+    font-size: 2.4rem;
+    color: #a4a2aa;
+    @include breakpoint(md) {
+      max-width: 46ch;
+      font-size: 2.8vw;
+    }
+  }
+
+  .icon {
+    display: inline-flex;
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    @include breakpoint(md) {
+      width: 4.2rem;
+      height: 4.2rem;
+    }
+  }
+
+  .color {
+    margin: 0;
+    background: linear-gradient(to right, #d45f29 0%, #f1ad57 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   .wrapper {
     margin-bottom: 11.2rem;

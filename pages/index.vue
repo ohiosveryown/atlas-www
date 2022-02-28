@@ -129,14 +129,6 @@
       </section>
 
       <section>
-        <section-header
-          class="scroll-target red"
-          heading="Trusted by"
-          highlight="trailblazers"
-          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985210/atlas/kenyqx0zj4hatsqnh1dq.png"
-          bg=""
-          subheading="We've helped companies both large and small connect with their customers, and are backed by YCombinator."
-        />
         <testimonials class="scroll-target" />
       </section>
 
