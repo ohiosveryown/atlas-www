@@ -84,31 +84,34 @@
       introEnter() {
         gsap.from("nav", {
           opacity: 0,
-          duration: 1,
-          delay: 0.25,
+          duration: 0.5,
           ease: Power4.easeOut,
+        })
+      },
+
+      handleScroll() {
+        let scrollpos = window.scrollY
+        const header = document.querySelector("nav")
+        const header_height = header.offsetHeight
+
+        const add_class_on_scroll = () => header.classList.add("nav-active")
+        const remove_class_on_scroll = () =>
+          header.classList.remove("nav-active")
+
+        window.addEventListener("scroll", function () {
+          scrollpos = window.scrollY
+
+          if (scrollpos > 10) {
+            add_class_on_scroll()
+          } else {
+            remove_class_on_scroll()
+          }
         })
       },
     },
     mounted() {
       this.introEnter()
-
-      let scrollpos = window.scrollY
-      const header = document.querySelector("nav")
-      const header_height = header.offsetHeight
-
-      const add_class_on_scroll = () => header.classList.add("nav-active")
-      const remove_class_on_scroll = () => header.classList.remove("nav-active")
-
-      window.addEventListener("scroll", function () {
-        scrollpos = window.scrollY
-
-        if (scrollpos > 10) {
-          add_class_on_scroll()
-        } else {
-          remove_class_on_scroll()
-        }
-      })
+      this.handleScroll()
     },
   }
 </script>

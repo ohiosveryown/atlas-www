@@ -249,65 +249,73 @@
 
 <script>
   export default {
-    mounted() {
-      const elements = document.querySelectorAll(".scroll-target")
+    methods: {
+      handleScroll() {
+        const elements = document.querySelectorAll(".scroll-target")
 
-      let observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.intersectionRatio > 0) {
-            entry.target.classList.add("active")
-          }
+        let observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0) {
+              entry.target.classList.add("active")
+            }
+          })
         })
-      })
 
-      elements.forEach((e) => {
-        observer.observe(e)
-      })
+        elements.forEach((e) => {
+          observer.observe(e)
+        })
+      },
 
-      const progressBar = document.querySelector(".progress-bar")
-      const section = document.querySelector(".horizontal-scroll")
-      let currentPixel = section.scrollLeft
-      let isDown = false
-      let startX
-      let scrollLeft
+      carousel() {
+        const progressBar = document.querySelector(".progress-bar")
+        const section = document.querySelector(".horizontal-scroll")
+        let currentPixel = section.scrollLeft
+        let isDown = false
+        let startX
+        let scrollLeft
 
-      section.addEventListener("scroll", () => {
-        const winScroll = section.scrollLeft || section.scrollLeft
-        const width = section.scrollWidth - section.clientWidth
-        const scrolled = (winScroll / width) * 100
-        progressBar.style.width = scrolled + "%"
+        section.addEventListener("scroll", () => {
+          const winScroll = section.scrollLeft || section.scrollLeft
+          const width = section.scrollWidth - section.clientWidth
+          const scrolled = (winScroll / width) * 100
+          progressBar.style.width = scrolled + "%"
 
-        this.scrollpos = section.scrollLeft
-      })
+          this.scrollpos = section.scrollLeft
+        })
 
-      section.addEventListener("mousedown", (e) => {
-        isDown = true
-        section.classList.add("active")
-        startX = e.pageX - section.offsetLeft
-        scrollLeft = section.scrollLeft
-      })
+        section.addEventListener("mousedown", (e) => {
+          isDown = true
+          section.classList.add("active")
+          startX = e.pageX - section.offsetLeft
+          scrollLeft = section.scrollLeft
+        })
 
-      section.addEventListener("mousedown", (e) => {
-        section.style.cursor = "grabbing"
-        section.style.transform = "scale(.98)"
-        isDown = true
-        startX = e.pageX - section.offsetLeft
-        scrollLeft = section.scrollLeft
-      })
+        section.addEventListener("mousedown", (e) => {
+          section.style.cursor = "grabbing"
+          section.style.transform = "scale(.98)"
+          isDown = true
+          startX = e.pageX - section.offsetLeft
+          scrollLeft = section.scrollLeft
+        })
 
-      section.addEventListener("mouseup", () => {
-        section.style.transform = "scale(1)"
-        section.style.cursor = "grab"
-        isDown = false
-      })
+        section.addEventListener("mouseup", () => {
+          section.style.transform = "scale(1)"
+          section.style.cursor = "grab"
+          isDown = false
+        })
 
-      section.addEventListener("mousemove", (e) => {
-        if (!isDown) return
-        e.preventDefault()
-        const x = e.pageX - section.offsetLeft
-        const walk = (x - startX) * 0.8
-        section.scrollLeft = scrollLeft - walk
-      })
+        section.addEventListener("mousemove", (e) => {
+          if (!isDown) return
+          e.preventDefault()
+          const x = e.pageX - section.offsetLeft
+          const walk = (x - startX) * 0.8
+          section.scrollLeft = scrollLeft - walk
+        })
+      },
+    },
+    mounted() {
+      this.handleScroll()
+      this.carousel()
     },
   }
 </script>
