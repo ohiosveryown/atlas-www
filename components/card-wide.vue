@@ -93,6 +93,7 @@
     margin-right: 1.2rem;
     width: 4.2rem;
     height: 4.2rem;
+    pointer-events: none;
   }
 
   .product {

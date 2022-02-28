@@ -25,13 +25,13 @@
         </li>
 
         <li>
-          <header class="inter">Custom events</header>
-          <p>See the whole conversation with your customers.</p>
+          <header class="inter">Console events</header>
+          <p>See console errors and events as they happen.</p>
         </li>
 
         <li>
-          <header class="inter">Fast forward</header>
-          <p>See the whole conversation with your customers.</p>
+          <header class="inter">Bug highlighting</header>
+          <p>See bugs or errors annotated in the actual recording.</p>
         </li>
       </ul>
     </article>
@@ -182,6 +182,7 @@
   .mesh {
     position: absolute;
     top: -10rem;
+    pointer-events: none;
     @include breakpoint(md) {
       top: -12rem;
       transform: scale(1.1);

@@ -70,6 +70,7 @@
     width: 3.2rem;
     height: 3.2rem;
     object-fit: cover;
+    pointer-events: none;
     @include breakpoint(md) {
       width: 4.2rem;
       height: 4.2rem;

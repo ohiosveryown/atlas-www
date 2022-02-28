@@ -182,6 +182,7 @@
     z-index: var(--z1);
     margin: -14rem auto 0;
     transform: scale(0.25);
+    pointer-events: none;
     @include breakpoint(md) {
       margin-top: -14rem;
       transform: scale(0.5);

@@ -54,6 +54,8 @@
   }
 
   .headings {
+    position: relative;
+    z-index: var(--z2);
     margin: 0 auto 1.6rem;
     display: flex;
     flex-direction: column;
@@ -140,6 +142,7 @@
     position: absolute;
     z-index: var(--z1);
     bottom: 0;
+    pointer-events: none;
   }
 </style>
 
