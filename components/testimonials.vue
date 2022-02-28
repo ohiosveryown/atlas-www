@@ -3,9 +3,9 @@
     <ul>
       <testimonial
         avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Luke Hamiltion"
-        title="Sr. Software, magic.link"
-        quote="With Atlas we've reached record new user growth."
+        author="Brian Bishop"
+        title="Pigeon Loans"
+        quote="...it's smooth, real, real smooth"
       />
 
       <testimonial

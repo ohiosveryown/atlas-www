@@ -91,6 +91,9 @@
       font-size: 2.4vw;
     }
     @include breakpoint(mdl) {
+      font-size: 2.6rem;
+    }
+    @include breakpoint(lg) {
       font-size: 2vw;
     }
   }
