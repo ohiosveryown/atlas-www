@@ -36,6 +36,10 @@
     width: 4.2rem;
     height: 4.2rem;
     pointer-events: none;
+    @include breakpoint(lg) {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
   }
 
   header {

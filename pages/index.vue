@@ -34,7 +34,7 @@
             liOne="Import customer data"
             liTwo="Integration support"
             liThree="Single snippet install"
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646077472/atlas/z0yxeb0nsnfzumt5afwe.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
           />
         </section>
 
@@ -80,7 +80,7 @@
             liOne="Session recordings"
             liTwo="Bug tracking"
             liThree="Internal tool integration"
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801957/atlas/bfqlxpaokdjxhe9osr0h.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646077730/atlas/zyz3cisg5jldj5v06bim.png"
           />
           <div class="scroll-target horizontal-scroll">
             <card

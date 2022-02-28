@@ -75,7 +75,7 @@
     }
 
     @include breakpoint(mdl) {
-      max-width: 42ch;
+      /*       max-width: 42ch; */
     }
 
     @include breakpoint(lg) {

@@ -90,6 +90,14 @@
     }
   }
 
+  span {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 0.5vw;
+    }
+  }
+
   .subheading {
     margin-bottom: 1.2rem;
     opacity: 0.64;
