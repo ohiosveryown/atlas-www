@@ -1,7 +1,10 @@
 <template>
   <div class="wrapper">
     <img class="icon" :src="icon" alt="" />
-    <header class="inter">{{ heading }}</header>
+    <header class="inter">
+      {{ heading }}
+      <!--       <small class="tag">Coming Soon</small> -->
+    </header>
     <p>
       {{ subheading }}
     </p>
@@ -36,6 +39,8 @@
   }
 
   header {
+    display: flex;
+    align-content: center;
     margin-bottom: 1.2rem;
     font-size: 2.2rem;
     @include breakpoint(md) {
@@ -43,6 +48,21 @@
     }
     @include breakpoint(mdl) {
       font-size: 2vw;
+    }
+  }
+
+  .tag {
+    align-self: center;
+    margin: 0 0 0 1.2rem;
+    display: block;
+    padding: 0.6rem 1rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.24);
+    border-radius: 100px;
+    font-family: var(--system-ui);
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.14);
+    @include breakpoint(md) {
+      font-size: 1.2rem;
     }
   }
 

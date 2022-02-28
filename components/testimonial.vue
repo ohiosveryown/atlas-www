@@ -39,13 +39,17 @@
   blockquote {
     padding: 2.4rem;
     margin-bottom: 4.2rem;
-    border-radius: 100px;
+    border-radius: 20px;
     background: linear-gradient(100deg, #811313 0%, #081869 100%);
     box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.38),
       0px 23px 25px rgba(0, 0, 0, 0.24), 0px 4px 6px rgba(0, 0, 0, 0.14);
     @include breakpoint(md) {
-      max-width: 52ch;
+      max-width: 48ch;
       width: max-content;
+    }
+
+    @include breakpoint(md) {
+      border-radius: 100px;
     }
   }
 </style>

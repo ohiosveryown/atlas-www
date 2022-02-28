@@ -2,8 +2,7 @@
   <header>
     <h3 class="inter">
       {{ heading }}
-      <span>{{ highlight }}</span>
-      <img class="icon" :src="icon" alt="" />
+      <span>{{ highlight }} <img class="icon" :src="icon" alt="" /></span>
     </h3>
     <h4 class="founders">
       {{ subheading }}
@@ -25,18 +24,32 @@
     position: relative;
     z-index: var(--z2);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.2rem;
     padding-bottom: 0.4rem;
     font-size: 2.4rem;
     @include breakpoint(md) {
+      flex-direction: row;
       font-size: 3.2vw;
+    }
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        margin-left: 0.75vw;
+      }
     }
   }
 
   span {
-    margin: 0 0.8vw;
+    margin: 0 1.5vw;
+    @include breakpoint(md) {
+      margin: 0 0.8vw;
+    }
   }
 
   h4 {

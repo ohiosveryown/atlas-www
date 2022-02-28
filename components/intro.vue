@@ -32,10 +32,13 @@
         src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645674527/atlas/tde4jszdhgjazn0zjpjb.png"
         alt="mesh gradient"
       />
-      <div class="enter signup">
-        <span class="inter">Schedule a Demo</span>
-        <button class="inter">Book Time</button>
-      </div>
+
+      <a target="_blank" href="https://calendly.com/jon-obryan/30min">
+        <div class="enter signup">
+          <span class="inter">Schedule a Demo</span>
+          <button class="inter">Book Time</button>
+        </div>
+      </a>
     </div>
   </section>
 </template>

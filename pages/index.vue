@@ -51,7 +51,7 @@
           class="card--md"
           icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
           heading="Smarter insights"
-          subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
+          subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps – coming soon."
           product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742402/atlas/gr8lf3spcuhj7mbe0j5l.png"
           bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
         />
@@ -60,7 +60,7 @@
       <section>
         <section-header
           class="scroll-target blue"
-          heading="Conversation in"
+          heading="Customer context in"
           highlight="one place"
           icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801797/atlas/j5nt1ouuhuwdmqnul8wl.png"
           bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645802678/atlas/hhrvmz0jusz4tvxrz5yq.png"
@@ -69,7 +69,7 @@
         />
 
         <card-wide
-          class="scroll-targetttt"
+          class="scroll-target"
           heading="Tools to foster customer relationships"
           subheading="Chat, ticketing, and automated communications all in one place.
           See the whole conversation with your customers."
@@ -79,7 +79,7 @@
           mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801956/atlas/eq5ojyyszgjghiev7c1y.png"
           liOne="All-in-one composer"
           liTwo="Chat with Slack integration"
-          liThree="Multi-channel responses (Coming Soon)"
+          liThree="Multi-channel responses"
           product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801957/atlas/bfqlxpaokdjxhe9osr0h.png"
         />
         <div class="scroll-target horizontal-scroll">
@@ -87,7 +87,7 @@
             class="card--md"
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="Customer Timeline"
-            subheading="Supercharge your daily routine with batch actions, shortcuts, and automations."
+            subheading="Instantly understand your customers' journey with all conversations and events in a single timeline."
             product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/nnlfwnrw6g1mlqtu7uhd.png"
           />
@@ -96,7 +96,7 @@
             class="card--md"
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="Ticket History"
-            subheading="Convert customer conversations into data driven insights to drive your product roadmap."
+            subheading="Understand your customers most pressing and time sensitive issues."
             product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sgeakeifve1kpzr2jr5t.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
           />
@@ -105,7 +105,7 @@
             class="card--md"
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             heading="API"
-            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
+            subheading="Access your customer data with granular endpoints to create a customized experience."
             product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/jigxvku2pqtaoat5w5b3.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805258/atlas/izmgylyhimf7hxszd6uu.png"
           />
@@ -130,14 +130,14 @@
 
       <section>
         <section-header
-          class="scroll-target red"
+          class="scroll-targettt red"
           heading="Trusted by"
           highlight="trailblazers"
           icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985210/atlas/kenyqx0zj4hatsqnh1dq.png"
           bg=""
-          subheading="We've helped companies both large and small connect with their customers to gain trust, solve issues, and foster better relationships."
+          subheading="We've helped companies both large and small connect with their customers, and are backed by YCombinator."
         />
-        <testimonials class="scroll-target" />
+        <testimonials class="scroll-targetttt" />
       </section>
 
       <section>
@@ -183,7 +183,7 @@
   }
 
   .cards {
-    margin-bottom: 19.6rem;
+    margin-bottom: 14rem;
     @include breakpoint(md) {
       display: flex;
       justify-content: space-between;

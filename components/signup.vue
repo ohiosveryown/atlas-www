@@ -114,7 +114,11 @@
     }
 
     @include breakpoint(mdl) {
-      width: max-content;
+      padding: 1.6rem 4rem;
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(lg) {
       padding: 2rem 4rem;
       font-size: 2rem;
     }
