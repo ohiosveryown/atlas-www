@@ -23,8 +23,8 @@
   img {
     margin-right: 1.2rem;
     border-radius: 100px;
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   article {

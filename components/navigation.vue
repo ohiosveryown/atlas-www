@@ -57,8 +57,6 @@
 
   a {
     font-size: 1.5rem;
-    /*     color: red;
-    mix-blend-mode: exclusion; */
   }
 
   @media (pointer: fine) {
@@ -73,6 +71,7 @@
   .nav-active {
     background: linear-gradient(180deg, #05020d 0%, rgba(5, 2, 13, 0) 100%);
     backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     @include breakpoint(md) {
       padding: 1.2rem 0;
     }

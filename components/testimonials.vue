@@ -3,7 +3,7 @@
     <header>
       <h3 class="inter">
         Trusted by
-        <span
+        <span class="red"
           >trailblazers
           <img
             class="icon"
@@ -15,7 +15,6 @@
         We've helped companies both large and small connect with their
         customers, and are backed by <span class="color">YCombinator</span>.
       </h4>
-      <img :src="bg" alt="" class="bg" />
     </header>
     <ul>
       <testimonial
@@ -46,11 +45,40 @@
         quote="All the features of FullStory at half the price."
       />
     </ul>
+    <img :src="bg" alt="" class="bg" />
   </div>
 </template>
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
+
+  .wrapper {
+    position: relative;
+  }
+
+  .bg {
+    /*     display: none; */
+    position: absolute;
+    z-index: var(--z1);
+    top: 12rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: scale(3.2);
+    pointer-events: none;
+    @include breakpoint(md) {
+      top: -10rem;
+      transform: scale(1);
+    }
+    @include breakpoint(lg) {
+      top: -40rem;
+    }
+  }
+
+  li {
+    position: relative;
+    z-index: var(--z2);
+  }
 
   header {
     position: relative;
@@ -152,7 +180,7 @@
 
     li:nth-of-type(3) {
       @include breakpoint(md) {
-        animation: float03 5s ease-in-out 2s infinite;
+        animation: float03 5s ease-in-out 4s infinite;
         margin-left: 8vw;
       }
 
@@ -168,7 +196,7 @@
 
       @include breakpoint(mdl) {
         margin: -4vw 0 0 46vw;
-        animation: float02 5s ease-in-out 2s infinite;
+        animation: float02 4.5s ease-in-out 2s infinite;
       }
       @include breakpoint(lg) {
         margin-left: 64vw;
@@ -219,5 +247,7 @@
 </style>
 
 <script>
-  export default {}
+  export default {
+    props: ["bg"],
+  }
 </script>

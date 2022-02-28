@@ -6,148 +6,157 @@
       alt="mesh gradient"
     />
     <navigation />
-    <main class="width">
-      <intro
-        heading="Give your customers superhuman support"
-        subheading="Atlas is a blazingly fast, modern support tool and a system of record for all your customers interactions."
-      />
-      <section>
-        <section-header
-          class="scroll-target green hide--sm"
-          heading="Onboarding made"
-          highlight="easy"
-          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645721930/atlas/yuragpqjv0ldyzwxnput.png"
-          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645725400/atlas/akiielqlt2mojbtt7zfy.png"
-          subheading="Seamlessly import your existing customer data with our contact migration
-        tool and be up and running in no time."
+    <div class="x">
+      <main class="width">
+        <intro
+          heading="Give your customers superhuman support"
+          subheading="Atlas is a blazingly fast, modern support tool and a system of record for all your customers interactions."
         />
-        <card-wide
-          class="scroll-target"
-          heading="Jumpstart your productivity"
-          subheading="Use our import tool to move tickets and customer data in bulk from
-          legacy systems into Atlas – in no time."
-          icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
-          icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017822/atlas/dtrez6rzvr8q6uipr0nh.png"
-          icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017885/atlas/wwwaxqcle1kwdfunejd8.png"
-          mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
-          liOne="Import customer data"
-          liTwo="Integration support"
-          liThree="Single snippet install"
-          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
-        />
-      </section>
+        <section>
+          <section-header
+            class="scroll-target green hide--sm"
+            heading="Onboarding made"
+            highlight="easy"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645721930/atlas/yuragpqjv0ldyzwxnput.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645725400/atlas/akiielqlt2mojbtt7zfy.png"
+            subheading="Seamlessly import your existing customer data with our contact migration
+          tool and be up and running in no time."
+          />
+          <card-wide
+            class="scroll-target"
+            heading="Jumpstart your productivity"
+            subheading="Use our import tool to move tickets and customer data in bulk from
+            legacy systems into Atlas – in no time."
+            icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017822/atlas/dtrez6rzvr8q6uipr0nh.png"
+            icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017885/atlas/wwwaxqcle1kwdfunejd8.png"
+            mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
+            liOne="Import customer data"
+            liTwo="Integration support"
+            liThree="Single snippet install"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
+          />
+        </section>
 
-      <section class="scroll-target cards">
-        <card
-          class="card--sm card--padding"
-          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017945/atlas/ionehpf0mrpe44w4tibi.png"
-          heading="Respond faster"
-          subheading="Supercharge your daily routine with batch actions, shortcuts, and automations."
-          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645745514/atlas/ofkx9jbjnsajs79r8bcl.png"
-          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645743334/atlas/ncpqxsglovghqmj37iyg.png"
-        />
-
-        <card
-          class="card--md"
-          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018009/atlas/a5rgrlkulb78dhp8sonb.png"
-          heading="Smarter insights"
-          subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps – coming soon."
-          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742402/atlas/gr8lf3spcuhj7mbe0j5l.png"
-          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
-        />
-      </section>
-
-      <section>
-        <section-header
-          class="scroll-target blue"
-          heading="Customer context in"
-          highlight="one place"
-          icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801797/atlas/j5nt1ouuhuwdmqnul8wl.png"
-          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645802678/atlas/hhrvmz0jusz4tvxrz5yq.png"
-          subheading="Chat, ticketing, and automated communications all in one place.
-          See the whole conversation with your customers."
-        />
-
-        <card-wide
-          class="scroll-target"
-          heading="Tools to foster customer relationships"
-          subheading="Chat, ticketing, and automated communications all in one place.
-          See the whole conversation with your customers."
-          icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/kukcyhzfydoj4rpnh9ed.png"
-          icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/jt0c7sghhq9ic4skf04h.png"
-          icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/hm6fdm0mt1aejv8lpui4.png"
-          mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801956/atlas/eq5ojyyszgjghiev7c1y.png"
-          liOne="Session recordings"
-          liTwo="Bug tracking"
-          liThree="Internal tool integration"
-          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801957/atlas/bfqlxpaokdjxhe9osr0h.png"
-        />
-        <div class="scroll-target horizontal-scroll">
+        <section class="scroll-target cards">
           <card
-            class="card--md"
-            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
-            heading="Customer Timeline"
-            subheading="Understand your customers' journey with conversations and events in a single timeline."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
-            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/nnlfwnrw6g1mlqtu7uhd.png"
+            class="card--sm card--padding"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017945/atlas/ionehpf0mrpe44w4tibi.png"
+            heading="Respond faster"
+            subheading="Supercharge your daily routine with batch actions, shortcuts, and automations."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645745514/atlas/ofkx9jbjnsajs79r8bcl.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645743334/atlas/ncpqxsglovghqmj37iyg.png"
           />
 
           <card
             class="card--md"
-            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018716/atlas/dvvvpdbzg9brokh2r1pi.png"
-            heading="Ticket History"
-            subheading="Know your customers most pressing and time sensitive issues."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sgeakeifve1kpzr2jr5t.png"
-            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
-          />
-
-          <card
-            class="card--md"
-            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017885/atlas/wwwaxqcle1kwdfunejd8.png"
-            heading="API"
-            subheading="Access your customer data with granular endpoints to create a customized experience."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/jigxvku2pqtaoat5w5b3.png"
-            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805258/atlas/izmgylyhimf7hxszd6uu.png"
-          />
-
-          <card
-            class="card--md"
-            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018009/atlas/a5rgrlkulb78dhp8sonb.png"
             heading="Smarter insights"
-            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps."
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
+            subheading="Convert your customer conversations into data driven insights to drive your product and engineering roadmaps – coming soon."
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646060579/atlas/rrsjyll6bxv41pxnlm7j.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
           />
-        </div>
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
-      </section>
+        </section>
 
-      <section class="scroll-target">
-        <card-full />
-      </section>
+        <section>
+          <section-header
+            class="scroll-target blue"
+            heading="Customer context in"
+            highlight="one place"
+            icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801797/atlas/j5nt1ouuhuwdmqnul8wl.png"
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645802678/atlas/hhrvmz0jusz4tvxrz5yq.png"
+            subheading="Chat, ticketing, and automated communications all in one place.
+            See the whole conversation with your customers."
+          />
 
-      <section>
-        <testimonials class="scroll-target" />
-      </section>
+          <card-wide
+            class="scroll-target"
+            heading="Tools to foster customer relationships"
+            subheading="Chat, ticketing, and automated communications all in one place.
+            See the whole conversation with your customers."
+            icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/kukcyhzfydoj4rpnh9ed.png"
+            icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/jt0c7sghhq9ic4skf04h.png"
+            icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/hm6fdm0mt1aejv8lpui4.png"
+            mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801956/atlas/eq5ojyyszgjghiev7c1y.png"
+            liOne="Session recordings"
+            liTwo="Bug tracking"
+            liThree="Internal tool integration"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801957/atlas/bfqlxpaokdjxhe9osr0h.png"
+          />
+          <div class="scroll-target horizontal-scroll">
+            <card
+              class="card--md"
+              icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
+              heading="Customer Timeline"
+              subheading="Understand your customers' journey with conversations and events in a single timeline."
+              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sztd3fc3v0kw3e1tymrk.png"
+              bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/nnlfwnrw6g1mlqtu7uhd.png"
+            />
 
-      <section>
-        <signup
-          class="scroll-target"
-          headingOne="Work smarter."
-          headingTwo="Get started today."
-          subheading="Sign up today and make customer interaction easier, and smarter."
-        />
-      </section>
+            <card
+              class="card--md"
+              icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018716/atlas/dvvvpdbzg9brokh2r1pi.png"
+              heading="Ticket History"
+              subheading="Know your customers most pressing and time sensitive issues."
+              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645854514/atlas/sgeakeifve1kpzr2jr5t.png"
+              bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+            />
 
-      <foot />
-    </main>
+            <card
+              class="card--md"
+              icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017885/atlas/wwwaxqcle1kwdfunejd8.png"
+              heading="API"
+              subheading="Access your customer data with granular endpoints to create a customized experience."
+              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646061545/atlas/ovgms0veq9vdkrpwqij5.png"
+              bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805258/atlas/izmgylyhimf7hxszd6uu.png"
+            />
+
+            <card
+              class="card--md"
+              icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062351/atlas/ymxgv5n3o4wmtvypsun6.png"
+              heading="Command Menu"
+              subheading="Use the command menu for efficiency with comprehensive keyboard shortcuts."
+              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646061773/atlas/jwbhukdv9iqh7ecj2bq7.png"
+              bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
+            />
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </section>
+
+        <section class="scroll-target">
+          <card-full />
+        </section>
+
+        <section>
+          <testimonials
+            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062637/atlas/kzcxf9aigsq42gfvwabr.png"
+            class="scroll-target"
+          />
+        </section>
+
+        <section>
+          <signup
+            class="scroll-target"
+            headingOne="Work smarter."
+            headingTwo="Get started today."
+            subheading="Sign up today and make customer interaction easier, and smarter."
+          />
+        </section>
+
+        <foot />
+      </main>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
+
+  .x {
+    overflow-x: hidden;
+  }
 
   .scroll-target {
     opacity: 0;
@@ -273,9 +282,9 @@
 
       section.addEventListener("mousedown", (e) => {
         isDown = true
-        slider.classList.add("active")
-        startX = e.pageX - slider.offsetLeft
-        scrollLeft = slider.scrollLeft
+        section.classList.add("active")
+        startX = e.pageX - section.offsetLeft
+        scrollLeft = section.scrollLeft
       })
 
       section.addEventListener("mousedown", (e) => {

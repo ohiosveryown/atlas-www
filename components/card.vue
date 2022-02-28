@@ -70,6 +70,9 @@
     margin-bottom: 4rem;
     opacity: 0.72;
     font-size: 1.7rem;
+    @include breakpoint(md) {
+      margin-bottom: 3.2rem;
+    }
     @include breakpoint(lg) {
       max-width: 48ch;
       font-size: 1.5vw;
