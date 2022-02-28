@@ -8,7 +8,9 @@
       <span class="founders subheading">{{ subheading }}</span>
     </header>
 
-    <button>Sign Up</button>
+    <button>
+      <a href="https://app.getatlas.io/auth/signup">Sign Up</a>
+    </button>
 
     <img
       src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645989915/atlas/zedgbhejc60e4snshghg.png"

@@ -4,7 +4,9 @@
       <logo />
       <div class="buttons">
         <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
-        <button class="primary">Sign Up</button>
+        <button class="primary">
+          <a href="https://app.getatlas.io/auth/signup">Sign Up</a>
+        </button>
       </div>
     </div>
   </nav>
@@ -52,6 +54,10 @@
     will-change: filter;
     @include breakpoint(md) {
       font-size: 1.5rem;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
   }
 
