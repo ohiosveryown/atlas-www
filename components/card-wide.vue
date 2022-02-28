@@ -46,7 +46,6 @@
       rgba(221, 86, 255, 0.28) 98.96%
     );
     @include breakpoint(md) {
-      padding: 5.6rem 4.8rem;
       flex-direction: row;
       justify-content: space-between;
       padding: 5.6rem 6.4rem;
@@ -71,7 +70,16 @@
     opacity: 0.72;
     font-size: 1.7rem;
 
+    @include breakpoint(md) {
+      max-width: 36ch;
+    }
+
+    @include breakpoint(mdl) {
+      max-width: 42ch;
+    }
+
     @include breakpoint(lg) {
+      max-width: 47ch;
       font-size: 1.5vw;
     }
   }
@@ -102,7 +110,7 @@
     filter: drop-shadow(8px 28px 32px rgba(0, 0, 0, 0.5));
     @include breakpoint(md) {
       margin-top: 0;
-      padding-left: 4.8rem;
+      padding-left: 0;
       align-self: center;
       max-width: 56%;
     }

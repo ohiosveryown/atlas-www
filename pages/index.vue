@@ -15,8 +15,8 @@
         <section>
           <section-header
             class="scroll-target green hide--sm"
-            heading="Onboarding made"
-            highlight="easy"
+            heading="Setup in a"
+            highlight="flash"
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645721930/atlas/yuragpqjv0ldyzwxnput.png"
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645725400/atlas/akiielqlt2mojbtt7zfy.png"
             subheading="Seamlessly import your existing customer data with our contact migration
@@ -34,7 +34,7 @@
             liOne="Import customer data"
             liTwo="Integration support"
             liThree="Single snippet install"
-            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1645729570/atlas/oed09rxp6ev0etchgp1q.png"
+            product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646077472/atlas/z0yxeb0nsnfzumt5afwe.png"
           />
         </section>
 
@@ -72,8 +72,7 @@
           <card-wide
             class="scroll-target"
             heading="Tools to foster customer relationships"
-            subheading="Chat, ticketing, and automated communications all in one place.
-            See the whole conversation with your customers."
+            subheading="See your customers' journey from all sides: session recordings, console and server errors, and your internal tools in a single location right when you need them."
             icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/kukcyhzfydoj4rpnh9ed.png"
             icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/jt0c7sghhq9ic4skf04h.png"
             icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/hm6fdm0mt1aejv8lpui4.png"
