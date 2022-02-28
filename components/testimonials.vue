@@ -133,13 +133,13 @@
   }
 
   ul {
-    *:nth-of-type(1) {
+    li:nth-of-type(1) {
       @include breakpoint(md) {
         animation: float01 5s ease-in-out infinite;
       }
     }
 
-    *:nth-of-type(2) {
+    li:nth-of-type(2) {
       @include breakpoint(md) {
         margin-left: 18vw;
         animation: float02 5s ease-in-out infinite;
@@ -150,7 +150,7 @@
       }
     }
 
-    *:nth-of-type(3) {
+    li:nth-of-type(3) {
       @include breakpoint(md) {
         animation: float03 5s ease-in-out 2s infinite;
         margin-left: 8vw;
@@ -161,7 +161,7 @@
       }
     }
 
-    *:nth-of-type(4) {
+    li:nth-of-type(4) {
       @include breakpoint(md) {
         margin-left: 26vw;
       }
