@@ -142,7 +142,7 @@
 
       <section>
         <signup
-          class="scroll-targetttt"
+          class="scroll-target"
           headingOne="Work smarter."
           headingTwo="Get started today."
           subheading="Sign up today and make customer interaction easier, and smarter."
