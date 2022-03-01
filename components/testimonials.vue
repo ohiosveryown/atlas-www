@@ -13,7 +13,14 @@
       </h3>
       <h4 class="founders">
         We've helped companies both large and small connect with their
-        customers, and are backed by <span class="color">YCombinator</span>.
+        customers, and are backed by
+        <span class="color"
+          >Y Combinator
+          <img
+            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1646116128/atlas/gevcoariit5ddjmyfdfn.png"
+            alt=""
+            class="yc"
+        /></span>
       </h4>
     </header>
     <ul>
@@ -32,10 +39,10 @@
       />
 
       <testimonial
-        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Luke Hamiltion"
-        title="Rippling"
-        quote="Atlas is a total gamechanger!"
+        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1646115791/atlas/ccp9tw2ruve4ykvluwtu.png"
+        author="Chris"
+        title="Loops"
+        quote="Atlas is lightening fast and makes speaking with users simple."
       />
 
       <testimonial
@@ -144,11 +151,50 @@
   }
 
   .color {
+    line-height: 0.5;
+    display: inline-flex;
+    align-items: center;
     margin: 0;
-    background: linear-gradient(to right, #d45f29 0%, #f1ad57 76%);
+    /*     background: linear-gradient(to right, #d45f29 0%, #f1ad57 76%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
+
+  .yc {
+    margin: -0.5rem 0 0 0.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+
+    @include breakpoint(md) {
+      margin: -0.8rem 0 0 0.8rem;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    @include breakpoint(lg) {
+      margin-top: -1.2rem;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  /*   .color:after {
+    position: absolute;
+    top: 0;
+    margin: -0.2rem 0 0 0.6rem;
+    content: "";
+    background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1646116128/atlas/gevcoariit5ddjmyfdfn.png")
+      no-repeat center center;
+    background-size: cover;
+    width: 2.2rem;
+    height: 2.2rem;
+
+    @include breakpoint(md) {
+      margin: -0.5rem 0 0 0.8rem;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  } */
 
   .wrapper {
     margin-bottom: 11.2rem;
@@ -164,6 +210,7 @@
   ul {
     li:nth-of-type(1) {
       @include breakpoint(md) {
+        margin-left: 4vw;
         animation: float01 5s ease-in-out infinite;
       }
     }
@@ -175,7 +222,8 @@
       }
 
       @include breakpoint(mdl) {
-        margin-left: 32vw;
+        margin-top: -4rem;
+        margin-left: 40vw;
       }
     }
 
@@ -186,7 +234,7 @@
       }
 
       @include breakpoint(mdl) {
-        margin-left: 12vw;
+        margin-left: 8vw;
       }
     }
 
@@ -196,10 +244,11 @@
       }
 
       @include breakpoint(mdl) {
-        margin: -4vw 0 0 46vw;
+        margin: 0 0 0 46vw;
         animation: float02 4.5s ease-in-out 2s infinite;
       }
       @include breakpoint(lg) {
+        margin-top: -4vw;
         margin-left: 56vw;
       }
     }

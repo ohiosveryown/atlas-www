@@ -131,7 +131,7 @@
         <section>
           <testimonials
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062637/atlas/kzcxf9aigsq42gfvwabr.png"
-            class="scroll-target"
+            class="scroll-targettt"
           />
         </section>
 
@@ -159,7 +159,7 @@
   .scroll-target {
     opacity: 0;
     transform: translateY(4rem);
-    transition: all 600ms ease 600ms;
+    transition: all 600ms ease 100ms;
     will-change: transform, opacity;
   }
 

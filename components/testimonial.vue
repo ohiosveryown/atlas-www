@@ -33,6 +33,7 @@
   }
 
   .title {
+    margin-top: -0.2rem;
     opacity: 0.72;
   }
 
