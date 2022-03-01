@@ -131,7 +131,7 @@
         <section>
           <testimonials
             bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062637/atlas/kzcxf9aigsq42gfvwabr.png"
-            class="scroll-targettt"
+            class="scroll-target"
           />
         </section>
 
