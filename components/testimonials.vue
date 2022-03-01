@@ -12,16 +12,16 @@
         /></span>
       </h3>
       <h4 class="founders">
-        We've helped companies both large and small connect with their
-        customers, and are backed by
-        <span class="color"
-          >Y Combinator
-          <img
-            src="https://res.cloudinary.com/da32ufmnf/image/upload/v1646116128/atlas/gevcoariit5ddjmyfdfn.png"
-            alt=""
-            class="yc"
-        /></span>
+        We've helped companies both large and small connect with their users to
+        create a better customer experience.
       </h4>
+      <div class="yc">
+        <span>backed by:</span>
+        <img
+          src="https://res.cloudinary.com/da32ufmnf/image/upload/v1646149063/atlas/dqdgowp61wih29w1s35n.png"
+          alt=""
+        />
+      </div>
     </header>
     <ul>
       <testimonial
@@ -150,6 +150,22 @@
     }
   }
 
+  .yc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem auto 0;
+
+    span {
+      opacity: 0.72;
+    }
+
+    img {
+      width: auto;
+      max-height: 4rem;
+    }
+  }
+
   .color {
     line-height: 0.5;
     display: inline-flex;
@@ -158,24 +174,6 @@
     /*     background: linear-gradient(to right, #d45f29 0%, #f1ad57 76%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-  }
-
-  .yc {
-    margin: -0.5rem 0 0 0.6rem;
-    width: 2.2rem;
-    height: 2.2rem;
-
-    @include breakpoint(md) {
-      margin: -0.8rem 0 0 0.8rem;
-      width: 3.2rem;
-      height: 3.2rem;
-    }
-
-    @include breakpoint(lg) {
-      margin-top: -1.2rem;
-      width: 4rem;
-      height: 4rem;
-    }
   }
 
   /*   .color:after {
