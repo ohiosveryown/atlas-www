@@ -115,7 +115,7 @@
               icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062351/atlas/ymxgv5n3o4wmtvypsun6.png"
               heading="Command Menu"
               subheading="Use the command menu for efficiency with comprehensive keyboard shortcuts."
-              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646061773/atlas/jwbhukdv9iqh7ecj2bq7.png"
+              product="https://res.cloudinary.com/da32ufmnf/image/upload/v1646149366/atlas/sxtmecz1iermadhlooaw.png"
               bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645742612/atlas/hgaeayz5pmhbkkkncyv6.png"
             />
           </div>
