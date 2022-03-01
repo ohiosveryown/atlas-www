@@ -34,14 +34,14 @@
       <testimonial
         avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
         author="Luke Hamiltion"
-        title="Sr. Software, magic.link"
+        title="Rippling"
         quote="Atlas is a total gamechanger!"
       />
 
       <testimonial
         avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Luke Hamiltion"
-        title="Sr. Software, magic.link"
+        author="Samantha Hilliard"
+        title="magic.link"
         quote="All the features of FullStory at half the price."
       />
     </ul>
