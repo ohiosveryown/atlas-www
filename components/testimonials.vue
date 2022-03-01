@@ -206,7 +206,7 @@
   }
 
   li {
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
     @include breakpoint(md) {
       margin-bottom: 0;
     }

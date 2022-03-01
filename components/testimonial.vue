@@ -38,18 +38,19 @@
 
   blockquote {
     padding: 2.4rem;
-    margin-bottom: 4.2rem;
+    margin-bottom: 5.6rem;
     border-radius: 20px;
+    max-width: 100%;
+    width: max-content;
     background: linear-gradient(100deg, #811313 0%, #081869 100%);
     box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.38),
       0px 23px 25px rgba(0, 0, 0, 0.24), 0px 4px 6px rgba(0, 0, 0, 0.14);
-    @include breakpoint(md) {
-      max-width: 48ch;
-      width: max-content;
-    }
+    line-height: 1.2;
 
     @include breakpoint(md) {
+      margin-bottom: 4.2rem;
       max-width: 40ch;
+      padding: 1.6rem 2rem 1.8rem;
       border-radius: 100px;
     }
   }
