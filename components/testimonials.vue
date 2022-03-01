@@ -25,7 +25,7 @@
       />
 
       <testimonial
-        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1646095778/atlas/f2q3eltdhsevbzueu0nt.jpg"
+        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1646099395/atlas/wor47blwg1jxrldqzjs4.jpg"
         author="Scott"
         title="Nullstone"
         quote="Atlas is a tool that I’ve always wanted as an engineering leader."
