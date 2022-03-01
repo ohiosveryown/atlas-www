@@ -143,9 +143,8 @@
             subheading="Sign up today and make customer interaction easier, and smarter."
           />
         </section>
-
-        <foot />
       </main>
+      <foot class="width" />
     </div>
   </div>
 </template>
