@@ -49,6 +49,7 @@
     }
 
     @include breakpoint(md) {
+      max-width: 40ch;
       border-radius: 100px;
     }
   }

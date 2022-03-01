@@ -18,17 +18,17 @@
     </header>
     <ul>
       <testimonial
-        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Brian Bishop"
+        avatar="https://app.pigeonloans.io/logo.png"
+        author="Brian"
         title="Pigeon Loans"
         quote="...it's smooth, real, real smooth"
       />
 
       <testimonial
-        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Luke Hamiltion"
-        title="Sr. Software, magic.link"
-        quote="Atlas was easy to implement and since doing so, we’ve seen our conversion rate skyrocket to over 95%!"
+        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1646095778/atlas/f2q3eltdhsevbzueu0nt.jpg"
+        author="Scott"
+        title="Nullstone"
+        quote="Atlas is a tool that I’ve always wanted as an engineering leader."
       />
 
       <testimonial
@@ -200,7 +200,7 @@
         animation: float02 4.5s ease-in-out 2s infinite;
       }
       @include breakpoint(lg) {
-        margin-left: 64vw;
+        margin-left: 56vw;
       }
     }
   }
