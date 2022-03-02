@@ -12,11 +12,12 @@
         /></span>
       </h3>
       <h4 class="founders">
-        We've helped companies both large and small connect with their users to
-        create a better customer experience.
+        We've helped companies both large and small and are backed by founders
+        from Rippling, Lattice, ZeroDown, Bloom Institute of Technology, Gatsby,
+        Dunzo, and Glide as well as:
       </h4>
       <div class="yc">
-        <span>backed by:</span>
+        <!--         <span>as well as:</span> -->
         <img
           src="https://res.cloudinary.com/da32ufmnf/image/upload/v1646149063/atlas/dqdgowp61wih29w1s35n.png"
           alt=""
@@ -46,10 +47,10 @@
       />
 
       <testimonial
-        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1645985924/atlas/grabla0mys0x7miebjrd.png"
-        author="Samantha Hilliard"
-        title="magic.link"
-        quote="All the features of FullStory at half the price."
+        avatar="https://res.cloudinary.com/da32ufmnf/image/upload/v1646235978/atlas/nu6ig6rs1plfqi05gnhg.png"
+        author="Josh"
+        title="PadSplit"
+        quote="...the first support tool I’ve used that has gotten me excited. Support tested, engineering approved."
       />
     </ul>
     <img :src="bg" alt="" class="bg" />
@@ -129,12 +130,22 @@
     position: relative;
     z-index: var(--z2);
     margin: auto;
-    line-height: 1.1;
-    font-size: 2.4rem;
+    line-height: 1.2;
+    font-size: 2.2rem;
     color: #a4a2aa;
     @include breakpoint(md) {
       max-width: 46ch;
       font-size: 2.8vw;
+      line-height: 1.1;
+    }
+
+    @include breakpoint(mdl) {
+      max-width: 60ch;
+      font-size: 2.8vw;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 52ch;
     }
   }
 
@@ -154,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem auto 0;
+    margin: 0.8rem auto 0;
 
     span {
       opacity: 0.72;
@@ -163,6 +174,9 @@
     img {
       width: auto;
       max-height: 4rem;
+      @include breakpoint(lg) {
+        max-height: 6.4rem;
+      }
     }
   }
 
