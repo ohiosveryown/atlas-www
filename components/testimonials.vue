@@ -12,16 +12,16 @@
         /></span>
       </h3>
       <h4 class="founders">
-        We've helped companies both large and small and are backed by founders
-        from Rippling, Lattice, ZeroDown, Bloom Institute of Technology, Gatsby,
-        Dunzo, and Glide as well as:
+        We've helped companies both large and small and are backed by Y
+        Combinator and founders from Rippling, Lattice, ZeroDown, Bloom
+        Institute of Technology, Gatsby, Dunzo, and Glide.
       </h4>
       <div class="yc">
         <!--         <span>as well as:</span> -->
-        <img
+        <!--         <img
           src="https://res.cloudinary.com/da32ufmnf/image/upload/v1646149063/atlas/dqdgowp61wih29w1s35n.png"
           alt=""
-        />
+        /> -->
       </div>
     </header>
     <ul>
@@ -140,7 +140,7 @@
     }
 
     @include breakpoint(mdl) {
-      max-width: 60ch;
+      /*       max-width: 46ch; */
       font-size: 2.8vw;
     }
 
