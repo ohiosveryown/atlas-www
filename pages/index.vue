@@ -5,6 +5,9 @@
       src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645844457/atlas/lp0neont7qe3uhdnorna.png"
       alt="mesh gradient"
     />
+
+    <!--     <chat class="chat-img" /> -->
+
     <navigation />
     <div class="x">
       <main class="width">
@@ -154,6 +157,14 @@
 
   .x {
     overflow-x: hidden;
+  }
+
+  .chat-img {
+    --position: 2.4rem;
+    position: fixed;
+    z-index: var(--zmax);
+    right: var(--position);
+    bottom: var(--position);
   }
 
   .scroll-target {
