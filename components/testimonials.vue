@@ -12,8 +12,8 @@
         /></span>
       </h3>
       <h4 class="founders">
-        We've helped companies both large and small and are backed by Y
-        Combinator and founders from Rippling, Lattice, ZeroDown, Bloom
+        We've helped companies both large and small and are backed by
+        Y&nbsp;Combinator and founders from Rippling, Lattice, ZeroDown, Bloom
         Institute of Technology, Gatsby, Dunzo, and Glide.
       </h4>
       <div class="yc">
