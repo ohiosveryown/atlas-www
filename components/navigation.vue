@@ -4,9 +4,12 @@
       <logo />
       <div class="buttons">
         <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
-        <button class="primary">
-          <a href="https://app.getatlas.io/auth/signup">Sign Up</a>
-        </button>
+
+        <a href="https://app.getatlas.io/auth/signup">
+          <button class="primary">
+            Sign Up
+          </button>
+        </a>
       </div>
     </div>
   </nav>
