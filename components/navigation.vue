@@ -3,13 +3,16 @@
     <div class="width wrapper">
       <logo />
       <div class="buttons">
+        <a
+          class="blog-link"
+          target="_blank"
+          href="https://medium.com/atlas-support"
+          >Blog</a
+        >
         <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
-
-        <a href="https://app.getatlas.io/auth/signup">
-          <button class="primary">
-            Sign Up
-          </button>
-        </a>
+        <button class="primary">
+          <a href="https://app.getatlas.io/auth/signup">Sign Up</a>
+        </button>
       </div>
     </div>
   </nav>
@@ -74,6 +77,14 @@
     }
     button:hover {
       filter: hue-rotate(20deg);
+    }
+  }
+
+  .blog-link {
+    display: none;
+    @include breakpoint(md) {
+      display: inline-flex;
+      margin-right: 2.4rem;
     }
   }
 
