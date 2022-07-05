@@ -33,7 +33,7 @@
             icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1645730789/atlas/ek9smi1lxr2tluyz7uvx.png"
             icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017822/atlas/dtrez6rzvr8q6uipr0nh.png"
             icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646017885/atlas/wwwaxqcle1kwdfunejd8.png"
-            mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645727807/atlas/e9hdo4knpnhca8kddcyg.png"
+            mesh="https://res.cloudinary.com/pence-atlas/image/upload/v1657035237/e9hdo4knpnhca8kddcyg_xkawvq.png"
             liOne="Import customer data"
             liTwo="Integration support"
             liThree="Single snippet install"
@@ -67,7 +67,7 @@
             heading="Customer context in"
             highlight="one place"
             icon="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801797/atlas/j5nt1ouuhuwdmqnul8wl.png"
-            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645802678/atlas/hhrvmz0jusz4tvxrz5yq.png"
+            bg="https://res.cloudinary.com/pence-atlas/image/upload/v1657035690/hhrvmz0jusz4tvxrz5yq_rhlhot.png"
             subheading="Chat, ticketing, and automated communications all in one place.
             See the whole conversation with your customers."
           />
@@ -79,7 +79,7 @@
             icon01="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/kukcyhzfydoj4rpnh9ed.png"
             icon02="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/jt0c7sghhq9ic4skf04h.png"
             icon03="https://res.cloudinary.com/da32ufmnf/image/upload/v1646018251/atlas/hm6fdm0mt1aejv8lpui4.png"
-            mesh="https://res.cloudinary.com/da32ufmnf/image/upload/v1645801956/atlas/eq5ojyyszgjghiev7c1y.png"
+            mesh="https://res.cloudinary.com/pence-atlas/image/upload/v1657035317/eq5ojyyszgjghiev7c1y_rhaoil.png"
             liOne="Session recordings"
             liTwo="Bug tracking"
             liThree="Internal tool integration"
@@ -133,7 +133,7 @@
 
         <section>
           <testimonials
-            bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1646062637/atlas/kzcxf9aigsq42gfvwabr.png"
+            bg="https://res.cloudinary.com/pence-atlas/image/upload/v1657035469/kzcxf9aigsq42gfvwabr_ds3tym.png"
             class="scroll-target"
           />
         </section>

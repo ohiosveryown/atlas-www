@@ -19,7 +19,7 @@
       </li>
     </ul>
     <img
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645991885/atlas/arxk14u4gdnab21ws1rw.png"
+      src="https://res.cloudinary.com/pence-atlas/image/upload/v1657035564/arxk14u4gdnab21ws1rw_ia7u0r.png"
       alt="mesh gradient"
       class="bg"
     />

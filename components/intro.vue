@@ -23,7 +23,7 @@
           </button>
         </a>
         <img
-          src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645649721/atlas/ywlilhruxakdu2zublsc.png"
+          src="https://res.cloudinary.com/pence-atlas/image/upload/v1657035406/ywlilhruxakdu2zublsc_uxjnwl.png"
           alt="product video preview image"
         />
       </figure>

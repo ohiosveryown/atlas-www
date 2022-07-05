@@ -44,7 +44,7 @@
       />
 
       <img
-        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645844209/atlas/bza9stfzsplif3iwbgny.png"
+        src="https://res.cloudinary.com/pence-atlas/image/upload/v1657034893/bza9stfzsplif3iwbgny_m9zv9n.png"
         alt=""
         class="mesh"
       />
