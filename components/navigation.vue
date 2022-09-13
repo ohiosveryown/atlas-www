@@ -7,12 +7,11 @@
           class="blog-link"
           target="_blank"
           href="https://medium.com/atlas-support"
+          @click="trackOpenBlog"
           >Blog</a
         >
-        <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
-        <button class="primary">
-          <a href="https://app.getatlas.io/auth/signup">Sign Up</a>
-        </button>
+        <a href="https://app.getatlas.io/auth/login?next=/" @click="trackLogIn">Log In</a>
+        <a class="sign-up" href="https://app.getatlas.io/auth/signup" @click="trackSignUp">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -48,7 +47,8 @@
     }
   }
 
-  button {
+  .sign-up {
+    display: inline-block;
     margin-left: 2.4rem;
     padding: 1.6rem 2.4rem;
     border-radius: 100px;
@@ -61,10 +61,12 @@
     @include breakpoint(md) {
       font-size: 1.5rem;
     }
-
-    a:hover {
-      text-decoration: none;
-    }
+  }
+  .sign-up:hover {
+    text-decoration: none;
+  }
+  .sign-up:focus {
+    outline: none;
   }
 
   a {
@@ -75,7 +77,7 @@
     a:hover {
       text-decoration: underline;
     }
-    button:hover {
+    .sign-up:hover {
       filter: hue-rotate(20deg);
     }
   }
@@ -127,6 +129,15 @@
             remove_class_on_scroll()
           }
         })
+      },
+      trackLogIn() {
+        this.$ga.event('interactions', 'log-in')
+      },
+      trackSignUp() {
+        this.$ga.event('conversions', 'sign-up', 'header')
+      },
+      trackOpenBlog() {
+        this.$ga.event('interactions', 'open-blog')
       },
     },
     mounted() {

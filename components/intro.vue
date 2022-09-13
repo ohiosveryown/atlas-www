@@ -11,6 +11,7 @@
         <a
           target="_blank"
           href="https://www.loom.com/share/cae56be74f1c49d8b972f0d9e0a97162"
+          @click="trackOpenDemoVideo"
         >
           <button class="play">
             <svg width="27" height="30" fill="none">
@@ -33,7 +34,7 @@
         alt="mesh gradient"
       />
 
-      <a target="_blank" href="https://calendly.com/jon-obryan/30min">
+      <a target="_blank" href="https://calendly.com/jon-obryan/30min" @click="trackScheduleDemo">
         <div class="enter signup">
           <span class="inter">Schedule a Demo</span>
           <button class="inter">Book Time</button>
@@ -262,6 +263,12 @@
           ease: Power4.easeOut,
         })
       },
+      trackScheduleDemo() {
+        this.$ga.event('conversions', 'schedule-demo')
+      },
+      trackOpenDemoVideo() {
+        this.$ga.event('interactions', 'open-demo-video')
+      }
     },
     mounted() {
       this.enter()

@@ -10,7 +10,11 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
-      { hid: "apple-mobile-web-app-title", name: "apple-mobile-web-app-title", content: "Atlas" },
+      {
+        hid: "apple-mobile-web-app-title",
+        name: "apple-mobile-web-app-title",
+        content: "Atlas",
+      },
       { hid: "og:title", name: "og:title", content: "Atlas" },
       { hid: "og:site_name", name: "og:site_name", content: "Atlas" },
     ],
@@ -27,7 +31,7 @@ export default {
   plugins: [],
   components: true,
   buildModules: [],
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxtjs/pwa", "@nuxtjs/google-analytics"],
 
   pwa: {
     manifest: {
@@ -42,4 +46,8 @@ export default {
 
   content: {},
   build: {},
-}
+
+  googleAnalytics: {
+    id: "UA-240989774-1",
+  },
+};

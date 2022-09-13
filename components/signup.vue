@@ -8,7 +8,7 @@
       <span class="founders subheading">{{ subheading }}</span>
     </header>
 
-    <a href="https://app.getatlas.io/auth/signup">
+    <a href="https://app.getatlas.io/auth/signup" @click="trackSignup">
       <button>
         Sign Up
       </button>
@@ -152,6 +152,11 @@
 
 <script>
   export default {
-    props: ["headingOne", "headingTwo", "subheading"],
+  props: ["headingOne", "headingTwo", "subheading"],
+  methods: {
+    trackSignup() {
+        this.$ga.event('conversions', 'sign-up', 'bottom')
+      }
+    }
   }
 </script>
