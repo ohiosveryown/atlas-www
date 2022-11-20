@@ -31,7 +31,7 @@ export default {
   plugins: [],
   components: true,
   buildModules: [],
-  modules: ["@nuxtjs/pwa", "@nuxtjs/google-analytics", "@nuxtjs/gtm"],
+  modules: ["@nuxtjs/pwa", "@nuxtjs/gtm"],
 
   pwa: {
     manifest: {
@@ -54,4 +54,4 @@ export default {
     id: "GTM-MC5C9WH",
     scriptDefer: true,
   },
-};
+}
