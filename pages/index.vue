@@ -6,8 +6,6 @@
       alt="mesh gradient"
     />
 
-    <!--     <chat class="chat-img" /> -->
-
     <navigation />
     <div class="x">
       <main class="width">
