@@ -4,30 +4,8 @@
   border: 2px solid hotpink;
 }
 
-.hide--sm {
-  display: none;
-  @include breakpoint(md) {
-    display: inherit;
-  }
-}
-
-.green span {
-  color: #16d18e;
-}
-
-.blue span {
-  color: #16a4d1;
-}
-
-.pink {
-  color: #ce21fa;
-}
-
-.red {
-  color: #f73c3c;
-}
-
 .pointer {
+  cursor: pointer;
   &:hover {
     cursor: pointer;
   }
@@ -44,23 +22,16 @@
   transition: all 0ms ease 700ms;
 }
 
-.pointer {
-  cursor: pointer;
-}
-.elevation-00 {
-  box-shadow: var(--elevation-00);
-}
-.elevation-01 {
-  box-shadow: var(--elevation-01);
-}
-.elevation-02 {
-  box-shadow: var(--elevation-02);
+.disable {
+  pointer-events: none;
 }
 
-@media (pointer: fine) {
-  .link:hover {
-    opacity: 1;
-  }
+.button-primary {
+  border-radius: 100px;
+  // height: 3.2rem;
+  background: var(--gradient-brand);
+  color: #fff;
+  font-weight: 500;
 }
 
 .mt-0 {

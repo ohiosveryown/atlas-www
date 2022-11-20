@@ -1,18 +1,22 @@
 <template>
   <nav>
     <div class="width wrapper">
-      <logo />
-      <div class="buttons">
-        <a
-          class="blog-link"
-          target="_blank"
-          href="https://medium.com/atlas-support"
-          @click="trackOpenBlog"
-          >Blog</a
-        >
-        <a href="https://app.getatlas.io/auth/login?next=/" @click="trackLogIn">Log In</a>
-        <a class="sign-up" href="https://app.getatlas.io/auth/signup" @click="trackSignUp">Sign Up</a>
-      </div>
+      <logo class="logo" />
+      <ul class="links">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Changelog</a></li>
+        <li><a href="">About</a></li>
+        <li class="rule"></li>
+        <li class="border-left">
+          <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
+        </li>
+        <li>
+          <a href="https://app.getatlas.io/auth/signup"
+            ><button class="button-primary">Sign Up</button></a
+          >
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
@@ -21,13 +25,72 @@
   @import "~static/style/grid.scss";
 
   nav {
+    --spacing: 2.8rem;
+    display: flex;
     position: sticky;
     z-index: var(--zmax);
     top: 0;
-    padding: 1.2rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.88);
     transition: all 300ms ease;
+
     @include breakpoint(md) {
-      padding: 2rem 0;
+      align-items: center;
+      padding: 0;
+      height: 48px;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.24);
+      background: linear-gradient(180deg, #05020d 0%, rgba(5, 2, 13, 0) 100%);
+      backdrop-filter: blur(12px);
+    }
+  }
+
+  .links {
+    display: flex;
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .rule {
+    position: relative;
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.56);
+    pointer-events: none;
+  }
+
+  ul {
+    display: flex;
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  li {
+    @include breakpoint(md) {
+      margin-left: var(--spacing);
+      transition: var(--ease);
+      &:hover {
+        opacity: 0.72;
+      }
+    }
+  }
+
+  button {
+    background: var(--gradient-brand);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    @include breakpoint(md) {
+      // height: 3.2rem;
+      padding: 0.6rem 1.6rem 0.7rem;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -37,66 +100,9 @@
     align-items: center;
   }
 
-  svg {
-    margin-top: -0.8rem;
-    transform: scale(0.88);
+  .logo {
+    transform: scale(0.72);
     transform-origin: left;
-    @include breakpoint(md) {
-      margin-top: 0;
-      transform: scale(1);
-    }
-  }
-
-  .sign-up {
-    display: inline-block;
-    margin-left: 2.4rem;
-    padding: 1.6rem 2.4rem;
-    border-radius: 100px;
-    background: linear-gradient(106deg, #2942ee 0%, #a056ff 98%);
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.3rem;
-    transition: filter 300ms ease;
-    will-change: filter;
-    @include breakpoint(md) {
-      font-size: 1.5rem;
-    }
-  }
-  .sign-up:hover {
-    text-decoration: none;
-  }
-  .sign-up:focus {
-    outline: none;
-  }
-
-  a {
-    font-size: 1.5rem;
-  }
-
-  @media (pointer: fine) {
-    a:hover {
-      text-decoration: underline;
-    }
-    .sign-up:hover {
-      filter: hue-rotate(20deg);
-    }
-  }
-
-  .blog-link {
-    display: none;
-    @include breakpoint(md) {
-      display: inline-flex;
-      margin-right: 2.4rem;
-    }
-  }
-
-  .nav-active {
-    background: linear-gradient(180deg, #05020d 0%, rgba(5, 2, 13, 0) 100%);
-    backdrop-filter: blur(12px);
-    /*     border-bottom: 1px solid rgba(0, 0, 255, 0.12); */
-    @include breakpoint(md) {
-      padding: 1.2rem 0;
-    }
   }
 </style>
 
@@ -110,39 +116,9 @@
           ease: Power4.easeOut,
         })
       },
-
-      handleScroll() {
-        let scrollpos = window.scrollY
-        const header = document.querySelector("nav")
-        const header_height = header.offsetHeight
-
-        const add_class_on_scroll = () => header.classList.add("nav-active")
-        const remove_class_on_scroll = () =>
-          header.classList.remove("nav-active")
-
-        window.addEventListener("scroll", function () {
-          scrollpos = window.scrollY
-
-          if (scrollpos > 10) {
-            add_class_on_scroll()
-          } else {
-            remove_class_on_scroll()
-          }
-        })
-      },
-      trackLogIn() {
-        this.$ga.event('interactions', 'log-in')
-      },
-      trackSignUp() {
-        this.$ga.event('conversions', 'sign-up', 'header')
-      },
-      trackOpenBlog() {
-        this.$ga.event('interactions', 'open-blog')
-      },
     },
     mounted() {
       this.introEnter()
-      this.handleScroll()
     },
   }
 </script>
