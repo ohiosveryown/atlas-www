@@ -1,10 +1,10 @@
 <template>
   <div class="app">
-    <navigation />
     <header-lg
       heading="Give your customers superhuman support"
       subheading="Atlas is a blazingly fast, modern support platform, helping identify and diagnose customer experience and interaction."
     />
+
     <main class="width">
       <figure class="enter disable hero">
         <img
@@ -31,7 +31,25 @@
 
         <app-preview />
       </section>
-      <div class="debug space">hello</div>
+
+      <section class="ux">
+        <header-md
+          heading="A Modern Tool with a Modern User Experience"
+          subheading="Finally a fast, simple UI. Rich hotkeys, a command palette, and AI accelerated productivity tools."
+        />
+
+        <ux-features class="scroll-target" />
+      </section>
+
+      <section class="signup">
+        <signup
+          class="scroll-target"
+          heading="Work smarter. Get started today."
+          subheading="Sign up today and make customer interaction easier, and smarter."
+        />
+      </section>
+
+      <div class="debug space tac">hello</div>
     </main>
     <!-- <exoplanet /> -->
   </div>
@@ -65,10 +83,23 @@
   }
 
   section.customer-centric {
+    @include breakpoint(md) {
+      margin-bottom: 17.6rem;
+    }
+
     header {
       margin: auto;
       @include breakpoint(md) {
         width: grid-width(6.8);
+      }
+    }
+  }
+
+  section.ux {
+    header {
+      @include breakpoint(md) {
+        margin-bottom: 4.8rem;
+        width: grid-width(6);
       }
     }
   }
@@ -93,7 +124,7 @@
         const observerOptions = {
           root: null,
           threshold: 0,
-          rootMargin: "0 0 -240px 0",
+          rootMargin: "0px 0px -240px 0px",
         }
 
         const observerCallback = (entries, observer) => {

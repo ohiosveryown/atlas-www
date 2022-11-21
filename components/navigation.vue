@@ -1,16 +1,33 @@
 <template>
   <nav>
     <div class="width wrapper">
-      <logo class="logo" />
+      <nuxt-link to="/">
+        <logo class="logo" />
+      </nuxt-link>
+
       <ul class="links">
-        <li><a href="">Features</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Changelog</a></li>
-        <li><a href="">About</a></li>
-        <li class="rule"></li>
-        <li class="border-left">
+        <li class="link">
+          <nuxt-link to="/features">Features</nuxt-link>
+        </li>
+
+        <li class="link">
+          <nuxt-link to="/pricing">Pricing</nuxt-link>
+        </li>
+
+        <li class="link">
+          <nuxt-link to="/changelog">Changelog</nuxt-link>
+        </li>
+
+        <li class="link">
+          <nuxt-link to="/about">About</nuxt-link>
+        </li>
+
+        <li class="rule" />
+
+        <li class="link">
           <a href="https://app.getatlas.io/auth/login?next=/">Log In</a>
         </li>
+
         <li>
           <a href="https://app.getatlas.io/auth/signup"
             ><button class="button-primary">Sign Up</button></a
@@ -72,9 +89,16 @@
     @include breakpoint(md) {
       margin-left: var(--spacing);
       transition: var(--ease);
-      &:hover {
-        opacity: 0.72;
-      }
+    }
+  }
+
+  @media (pointer: fine) {
+    .link:hover {
+      opacity: 0.72;
+    }
+
+    button:hover {
+      filter: hue-rotate(20deg);
     }
   }
 
@@ -83,14 +107,11 @@
     color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
+    transition: filter 300ms ease;
 
     @include breakpoint(md) {
       // height: 3.2rem;
       padding: 0.6rem 1.6rem 0.7rem;
-    }
-
-    &:hover {
-      opacity: 1;
     }
   }
 
@@ -101,8 +122,12 @@
   }
 
   .logo {
-    transform: scale(0.72);
+    transform: scale(0.72) translateY(0.3rem);
     transform-origin: left;
+  }
+
+  a.nuxt-link-exact-active {
+    color: #a5a5ff;
   }
 </style>
 

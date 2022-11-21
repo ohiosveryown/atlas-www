@@ -22,8 +22,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include breakpoint(md) {
-      margin: 8rem auto 4rem;
+      margin: 8rem auto 0;
       width: grid-width(10);
+      padding-bottom: 3.6rem;
     }
   }
 

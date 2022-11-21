@@ -17,7 +17,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include breakpoint(md) {
-      margin-bottom: 2.8rem;
+      padding-bottom: 2.6rem;
       line-height: 1.1;
     }
   }
