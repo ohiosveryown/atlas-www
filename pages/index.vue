@@ -26,7 +26,7 @@
         <header-md
           heading="Customer Centric Productivity"
           subheading="Build relationships with your customers by seeing them in their full context.
-          See how it works below 👇"
+          Preview how it works below 👇"
         />
 
         <app-preview />
