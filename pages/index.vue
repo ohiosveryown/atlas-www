@@ -21,6 +21,17 @@
 
         <feature-grid />
       </section>
+
+      <section class="customer-centric tac">
+        <header-md
+          heading="Customer Centric Productivity"
+          subheading="Build relationships with your customers by seeing them in their full context.
+          See how it works below 👇"
+        />
+
+        <app-preview />
+      </section>
+      <div class="debug space">hello</div>
     </main>
     <!-- <exoplanet /> -->
   </div>
@@ -28,6 +39,10 @@
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
+
+  .space {
+    margin-top: 140vh;
+  }
 
   main {
     position: relative;
@@ -45,6 +60,15 @@
     header {
       @include breakpoint(md) {
         width: grid-width(5);
+      }
+    }
+  }
+
+  section.customer-centric {
+    header {
+      margin: auto;
+      @include breakpoint(md) {
+        width: grid-width(6.8);
       }
     }
   }

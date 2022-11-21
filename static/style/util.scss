@@ -26,6 +26,18 @@
   pointer-events: none;
 }
 
+.scroll-target {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: all 600ms ease 100ms;
+  will-change: transform, opacity;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .button-primary {
   border-radius: 100px;
   // height: 3.2rem;

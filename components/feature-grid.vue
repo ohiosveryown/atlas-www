@@ -50,13 +50,14 @@
     grid-row-gap: 28px;
 
     @include breakpoint(md) {
-      margin: 6.4rem 0 6.4rem;
+      margin: 6.4rem 0 12rem;
     }
   }
 
   li {
     border-radius: 20px;
     background: #090218;
+    background: #14072f;
 
     @include breakpoint(md) {
       padding: 2rem;
