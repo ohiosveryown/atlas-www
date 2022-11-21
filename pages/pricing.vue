@@ -22,6 +22,7 @@
 
   main {
     position: relative;
+    padding-bottom: 50vh;
   }
 </style>
 
