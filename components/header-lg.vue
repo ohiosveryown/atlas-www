@@ -1,7 +1,7 @@
 <template>
   <header class="width tac">
-    <h1 class="enter inter">{{ heading }}</h1>
-    <h2 class="enter founders">
+    <h1 class="enter inter fs-xxl">{{ heading }}</h1>
+    <h2 class="enter founders fs-lg">
       {{ subheading }}
     </h2>
   </header>
@@ -24,18 +24,14 @@
     @include breakpoint(md) {
       margin: 8rem auto 4rem;
       width: grid-width(10);
-      font-size: 7.2rem;
-      line-height: 1;
     }
   }
 
   h2 {
     margin: 0 auto;
+    opacity: 0.72;
     @include breakpoint(md) {
       width: grid-width(7);
-      font-size: 3.2rem;
-      line-height: 1.1;
-      opacity: 0.64;
     }
   }
 </style>

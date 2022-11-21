@@ -1,16 +1,26 @@
 <template>
   <div class="app">
     <navigation />
-    <header-main
+    <header-lg
       heading="Give your customers superhuman support"
       subheading="Atlas is a blazingly fast, modern support platform, helping identify and diagnose customer experience and interaction."
     />
     <main class="width">
-      <img
-        class="enter disable hero"
-        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1668962888/atlas-refresh/index/cmk7xbfccjnfmyyr2lok.png"
-        alt="Atlas Customer Timeline"
-      />
+      <figure class="enter disable hero">
+        <img
+          src="https://res.cloudinary.com/da32ufmnf/image/upload/v1668962888/atlas-refresh/index/cmk7xbfccjnfmyyr2lok.png"
+          alt="Atlas Customer Timeline"
+        />
+      </figure>
+
+      <section class="platform">
+        <header-md
+          heading="A fully integrated suite of support products"
+          subheading="All of the best-in-class support tools, built specifically for support teams."
+        />
+
+        <feature-grid />
+      </section>
     </main>
     <!-- <exoplanet /> -->
   </div>
@@ -19,13 +29,23 @@
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
 
-  .app {
+  main {
     position: relative;
   }
 
   .hero {
+    position: relative;
+    z-index: var(--z2);
     @include breakpoint(md) {
-      margin-top: 11.2rem;
+      margin: 11.2rem 0 17.6rem;
+    }
+  }
+
+  section.platform {
+    header {
+      @include breakpoint(md) {
+        width: grid-width(5);
+      }
     }
   }
 

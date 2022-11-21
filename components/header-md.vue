@@ -1,0 +1,34 @@
+<template>
+  <header>
+    <h2 class="inter fs-xl">
+      {{ heading }}
+    </h2>
+    <h3 class="founders fs-lg">
+      {{ subheading }}
+    </h3>
+  </header>
+</template>
+
+<style lang="scss" scoped>
+  @import "~static/style/grid.scss";
+
+  h2 {
+    background: linear-gradient(180deg, #ffffff 0%, #d0c4e7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include breakpoint(md) {
+      margin-bottom: 2.8rem;
+      line-height: 1.1;
+    }
+  }
+
+  h3 {
+    opacity: 0.72;
+  }
+</style>
+
+<script>
+  export default {
+    props: ["heading", "subheading"],
+  }
+</script>

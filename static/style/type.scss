@@ -21,6 +21,27 @@
   font-family: "founders", var(--system-ui);
 }
 
+.fs-xxl {
+  @include breakpoint(md) {
+    font-size: 7.2rem;
+    line-height: 1;
+  }
+}
+
+.fs-xl {
+  @include breakpoint(md) {
+    font-size: 4.2rem;
+    line-height: 1;
+  }
+}
+
+.fs-lg {
+  @include breakpoint(md) {
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+}
+
 .uc {
   text-transform: uppercase;
 }
