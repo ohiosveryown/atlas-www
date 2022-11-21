@@ -48,19 +48,12 @@
           subheading="Sign up today and make customer interaction easier, and smarter."
         />
       </section>
-
-      <div class="debug space tac">hello</div>
     </main>
-    <!-- <exoplanet /> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
-
-  .space {
-    margin-top: 140vh;
-  }
 
   main {
     position: relative;
