@@ -1,15 +1,15 @@
 <template>
   <ul class="parent">
-    <li class="li1">1</li>
-    <li class="li2">2</li>
-    <li class="li3">
+    <li class="one">1</li>
+    <li class="two">2</li>
+    <li class="three">
       <header>
         <i>📼</i>
         <h3 class="inter">pixel perfect replay</h3>
       </header>
       <p>
         A video is worth a thousand words. Let your customers show you rather
-        than tell you with session recording.
+        then tell you with session recording.
       </p>
       <img
         class="disable"
@@ -17,11 +17,25 @@
         alt="session recording preview"
       />
     </li>
-    <li class="li4">4</li>
-    <li class="li5">5</li>
-    <li class="li6">6</li>
-    <li class="li7">7</li>
-    <li class="li8">8</li>
+    <li class="four">4</li>
+    <li class="five">5</li>
+    <li class="six">
+      <header>
+        <i>🧠</i>
+        <h3 class="inter">Smarter Insights</h3>
+      </header>
+      <p>
+        Convert your customer conversations into data driven insights, driving
+        your product and engineering roadmaps.
+      </p>
+      <img
+        class="disable"
+        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1668998043/atlas-refresh/index/hgivx3e0ar1mqas1obtv.png"
+        alt="smarter insights preview"
+      />
+    </li>
+    <li class="seven">7</li>
+    <li class="eight">8</li>
   </ul>
 </template>
 
@@ -34,6 +48,10 @@
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 28px;
     grid-row-gap: 28px;
+
+    @include breakpoint(md) {
+      margin: 6.4rem 0 6.4rem;
+    }
   }
 
   li {
@@ -55,47 +73,65 @@
   }
 
   p {
-    margin-bottom: 2.8rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     opacity: 0.72;
   }
 
-  .li1 {
+  .one {
     @include breakpoint(md) {
       grid-area: 1 / 1 / 3 / 2;
     }
   }
-  .li2 {
+
+  .two {
     @include breakpoint(md) {
       grid-area: 1 / 2 / 3 / 3;
     }
   }
-  .li3 {
+
+  .three {
+    background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1668997074/atlas-refresh/index/pf6jwl8vkqdc6ozrc4sw.png")
+      no-repeat center center;
+    background-size: cover;
     @include breakpoint(md) {
       grid-area: 1 / 3 / 4 / 4;
+      height: fit-content;
+      margin-top: -9.2rem;
     }
   }
-  .li4 {
+
+  .four {
     @include breakpoint(md) {
       grid-area: 4 / 3 / 6 / 4;
     }
   }
-  .li5 {
+
+  .five {
     @include breakpoint(md) {
       grid-area: 3 / 1 / 5 / 3;
     }
   }
-  .li6 {
+
+  .six {
+    background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1668997224/atlas-refresh/index/ausczy3mh1ouhwztp4wd.png")
+      no-repeat center center;
+    background-size: cover;
     @include breakpoint(md) {
+      display: flex;
+      flex-direction: column;
       grid-area: 1 / 4 / 4 / 6;
+      margin-top: -19rem;
     }
   }
-  .li7 {
+
+  .seven {
     @include breakpoint(md) {
       grid-area: 4 / 4 / 6 / 6;
     }
   }
-  .li8 {
+
+  .eight {
     @include breakpoint(md) {
       grid-area: 4 / 4 / 7 / 6;
     }
