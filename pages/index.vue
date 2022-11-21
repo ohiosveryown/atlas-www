@@ -90,21 +90,30 @@
   export default {
     methods: {
       handleScroll() {
-        const elements = document.querySelectorAll(".scroll-target")
+        const observerOptions = {
+          root: null,
+          threshold: 0,
+          rootMargin: "0 0 -240px 0",
+        }
 
-        let observer = new IntersectionObserver((entries) => {
+        const observerCallback = (entries, observer) => {
           entries.forEach((entry) => {
-            if (entry.intersectionRatio > 0) {
+            if (entry.isIntersecting) {
               entry.target.classList.add("active")
             }
           })
-        })
+        }
 
-        elements.forEach((e) => {
-          observer.observe(e)
-        })
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        )
+
+        const targets = document.querySelectorAll(".scroll-target")
+        targets.forEach((e) => observer.observe(e))
       },
     },
+
     mounted() {
       this.handleScroll()
     },

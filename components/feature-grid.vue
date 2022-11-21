@@ -1,8 +1,8 @@
 <template>
   <ul class="parent">
-    <li class="one">1</li>
-    <li class="two">2</li>
-    <li class="three">
+    <li class="scroll-target one">1</li>
+    <li class="scroll-target two">2</li>
+    <li class="scroll-target three">
       <header>
         <i>📼</i>
         <h3 class="inter">pixel perfect replay</h3>
@@ -17,9 +17,9 @@
         alt="session recording preview"
       />
     </li>
-    <li class="four">4</li>
-    <li class="five">5</li>
-    <li class="six">
+    <li class="scroll-target four">4</li>
+    <li class="scroll-target five">5</li>
+    <li class="scroll-target six">
       <header>
         <i>🧠</i>
         <h3 class="inter">Smarter Insights</h3>
@@ -34,8 +34,8 @@
         alt="smarter insights preview"
       />
     </li>
-    <li class="seven">7</li>
-    <li class="eight">8</li>
+    <li class="scroll-target seven">7</li>
+    <li class="scroll-target eight">8</li>
   </ul>
 </template>
 
