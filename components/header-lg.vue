@@ -46,7 +46,7 @@
         gsap.from(".enter", {
           opacity: 0,
           duration: 1.2,
-          delay: 0.75,
+          delay: 0.15,
           stagger: 0.15,
           skewY: 10,
           y: 120,
