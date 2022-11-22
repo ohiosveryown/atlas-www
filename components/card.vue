@@ -50,7 +50,7 @@
     z-index: var(--z2);
     margin-bottom: 2rem;
     font-size: 1.8rem;
-    opacity: 0.72;
+    color: #c7c3cd;
   }
 
   .product {

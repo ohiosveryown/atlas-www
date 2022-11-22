@@ -10,7 +10,7 @@
     >
 
     <img
-      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1645989915/atlas/zedgbhejc60e4snshghg.png"
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1669128282/atlas-refresh/index/j17q9e4ik3qdigwzafpb.png"
       alt=""
       class="bg"
     />

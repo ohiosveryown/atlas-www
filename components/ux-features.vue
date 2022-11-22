@@ -1,34 +1,28 @@
 <template>
   <ul>
-    <li class="card-wrapper">
-      <card
-        class="card"
-        icon="⌨️"
-        heading="Ticket History"
-        subheading="Know your customers most pressing and time sensitive issues."
-        bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
-      />
-    </li>
+    <card
+      class="card"
+      icon="⌨️"
+      heading="Ticket History"
+      subheading="Know your customers most pressing and time sensitive issues."
+      bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+    />
 
-    <li class="card-wrapper">
-      <card
-        class="card"
-        icon="🧰"
-        heading="Command menu"
-        subheading="Know your customers most pressing and time sensitive issues."
-        bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
-      />
-    </li>
+    <card
+      class="card"
+      icon="🧰"
+      heading="Command menu"
+      subheading="Know your customers most pressing and time sensitive issues."
+      bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+    />
 
-    <li class="card-wrapper">
-      <card
-        class="card"
-        icon="🔎️"
-        heading="Search"
-        subheading="Know your customers most pressing and time sensitive issues."
-        bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
-      />
-    </li>
+    <card
+      class="card"
+      icon="🔎️"
+      heading="Search"
+      subheading="Know your customers most pressing and time sensitive issues."
+      bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+    />
   </ul>
 </template>
 
@@ -44,18 +38,11 @@
     }
   }
 
-  .card-wrapper {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-
+  .card {
     @include breakpoint(md) {
       padding: 2rem;
       width: grid-width(3.8);
     }
-  }
-
-  .card {
-    transition: transform 0.1s;
   }
 </style>
 

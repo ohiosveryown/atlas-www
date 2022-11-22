@@ -92,7 +92,7 @@
     @include breakpoint(md) {
       width: grid-width(3.5);
       position: sticky;
-      top: 6.4rem;
+      top: 4.8rem;
     }
   }
 </style>

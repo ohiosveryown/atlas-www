@@ -1,40 +1,35 @@
 <template>
   <ul class="parent">
     <li class="scroll-target one">1</li>
+
     <li class="scroll-target two">2</li>
-    <li class="scroll-target three">
-      <header>
-        <i>📼</i>
-        <h3 class="inter">pixel perfect replay</h3>
-      </header>
-      <p>
-        A video is worth a thousand words. Let your customers show you rather
-        then tell you with session recording.
-      </p>
-      <img
-        class="disable"
-        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1668995137/atlas-refresh/index/p3k5m2qclpvpg2iqnl5w.png"
-        alt="session recording preview"
-      />
-    </li>
+
+    <card
+      class="scroll-target card three"
+      icon="📼"
+      heading="pixel perfect replay"
+      subheading="A video is worth a thousand words. Let your customers show you rather
+      then tell you with session recording."
+      product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668995137/atlas-refresh/index/p3k5m2qclpvpg2iqnl5w.png"
+      bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+    />
+
     <li class="scroll-target four">4</li>
+
     <li class="scroll-target five">5</li>
-    <li class="scroll-target six">
-      <header>
-        <i>🧠</i>
-        <h3 class="inter">Smarter Insights</h3>
-      </header>
-      <p>
-        Convert your customer conversations into data driven insights, driving
-        your product and engineering roadmaps.
-      </p>
-      <img
-        class="disable"
-        src="https://res.cloudinary.com/da32ufmnf/image/upload/v1668998043/atlas-refresh/index/hgivx3e0ar1mqas1obtv.png"
-        alt="smarter insights preview"
-      />
-    </li>
+
+    <card
+      class="scroll-target card six"
+      icon="🧠"
+      heading="Smarter Insights"
+      subheading="Convert your customer conversations into data driven insights, driving
+      your product and engineering roadmaps."
+      product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668998043/atlas-refresh/index/hgivx3e0ar1mqas1obtv.png"
+      bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
+    />
+
     <li class="scroll-target seven">7</li>
+
     <li class="scroll-target eight">8</li>
   </ul>
 </template>
@@ -76,7 +71,7 @@
   p {
     margin-bottom: 2rem;
     font-size: 1.8rem;
-    opacity: 0.72;
+    color: #c7c3cd;
   }
 
   .one {

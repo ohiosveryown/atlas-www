@@ -30,7 +30,7 @@
 
   h2 {
     margin: 0 auto;
-    opacity: 0.72;
+    color: #ede4f9;
     @include breakpoint(md) {
       width: grid-width(7);
     }

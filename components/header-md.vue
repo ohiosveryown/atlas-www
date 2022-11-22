@@ -23,7 +23,7 @@
   }
 
   h3 {
-    opacity: 0.72;
+    color: #c7c3cd;
   }
 </style>
 
