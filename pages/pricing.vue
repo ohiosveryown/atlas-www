@@ -38,7 +38,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Startup Plan Plus:</span>
+              <span>Ticketing</span>
             </li>
             <li>
               <svg
@@ -54,7 +54,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>CSAT</span>
+              <span>Chat, Email, SMS</span>
             </li>
             <li>
               <svg
@@ -70,7 +70,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Custom Events</span>
+              <span>Customer Timeline</span>
             </li>
             <li>
               <svg
@@ -86,7 +86,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Custom Inboxes</span>
+              <span>Session Recording</span>
             </li>
             <li>
               <svg
@@ -102,24 +102,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Ticket Routing</span>
-            </li>
-
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="13"
-                fill="none"
-              >
-                <path
-                  fill="#EBE9E3"
-                  fill-rule="evenodd"
-                  d="M2.066 5.306a.577.577 0 0 0-.246-.055H.592c-.118 0-.183.131-.111.22-.072-.089-.007-.22.11-.22h1.23a.577.577 0 0 1 .245.055Zm3.67 4.423L12.985.826a.566.566 0 0 1 .441-.208h1.23-1.23a.566.566 0 0 0-.44.208L5.736 9.73Zm-.389 1.712a.57.57 0 0 0 0 0ZM15.116 1.11l.001-.002c.312-.38.022-.926-.463-.926h-1.229c-.308 0-.603.137-.795.375v.001L5.736 9.025 2.615 5.189a1.007 1.007 0 0 0-.353-.275 1.041 1.041 0 0 0-.442-.1H.592c-.493 0-.77.552-.464.927l4.814 5.915a1.034 1.034 0 0 0 1.59.002L15.116 1.11Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span>Help Center</span>
+              <span>Bug Tracking</span>
             </li>
 
             <li>
@@ -136,7 +119,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Help Center</span>
+              <span>Search</span>
             </li>
 
             <li>
@@ -153,7 +136,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Teams</span>
+              <span>All Integrations, API, Webhooks</span>
             </li>
 
             <li>
@@ -170,7 +153,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Slack Support</span>
+              <span>24 hour Support SLA</span>
             </li>
           </ul>
 
@@ -554,6 +537,7 @@
   .pricing-card {
     align-self: flex-start;
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1668997224/atlas-refresh/index/ausczy3mh1ouhwztp4wd.png")
       no-repeat center center;
     background-size: cover;
@@ -616,7 +600,7 @@
 
       span {
         color: #fff;
-        margin: -0.1rem 0 0 0.8rem;
+        margin: -0.1rem 0 0 1.4rem;
       }
     }
 
