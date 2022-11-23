@@ -9,11 +9,13 @@
     <main class="enter width">
       <section>
         <aside>
-          <header>Chatbots</header>
-          <p>11 November 2022</p>
+          <div class="aside-wrapper">
+            <header>Chatbots</header>
+            <p>11 November 2022</p>
+          </div>
         </aside>
         <article>
-          <figure class="hero">
+          <figure class="hero hero-crop">
             <img
               src="https://res.cloudinary.com/da32ufmnf/image/upload/v1669216462/atlas-refresh/index/dnyq7minvldqfohodtzg.png"
               alt=""
@@ -60,7 +62,7 @@
           <p>2 November 2022</p>
         </aside>
         <article>
-          <figure class="hero hero-crop">
+          <figure class="hero">
             <img
               src="https://res.cloudinary.com/da32ufmnf/image/upload/v1669133198/atlas-refresh/features/vunfgnwlg4n9bjiclvga.png"
               alt=""
@@ -135,9 +137,9 @@
   }
 
   aside {
-    align-self: flex-start;
     position: sticky;
-    top: 0;
+    top: 6.4rem;
+    align-self: flex-start;
 
     header {
       margin-bottom: 0.4rem;
@@ -153,6 +155,12 @@
     @include breakpoint(md) {
       padding-left: 2rem;
     }
+  }
+
+  .aside-wrapper {
+    top: 0;
+    height: 10vh;
+    align-self: flex-start;
   }
 
   article {
