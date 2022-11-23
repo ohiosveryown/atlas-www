@@ -224,13 +224,6 @@
 
 <script>
   export default {
-    beforeDestroy() {
-      this.$refs.index.style.cssText = `
-          opacity: 0;
-          transition: opacity 300ms ease;
-        `
-    },
-
     methods: {
       enter() {
         gsap.from(".enter", {
@@ -247,6 +240,13 @@
 
     mounted() {
       this.enter()
+    },
+
+    beforeDestroy() {
+      this.$refs.index.style.cssText = `
+          opacity: 0;
+          transition: opacity 300ms ease;
+        `
     },
 
     //     methods: {

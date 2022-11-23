@@ -1,12 +1,12 @@
 <template>
-  <div class="app width">
+  <div ref="index" class="app width">
     <header-md
-      class="tac page-header"
+      class="enter tac page-header"
       heading="About"
       subheading="Learn about us and our mission."
     />
 
-    <main class="width">Body...</main>
+    <main class="enter width">Body...</main>
   </div>
 </template>
 
@@ -28,6 +28,31 @@
 
 <script>
   export default {
+    methods: {
+      enter() {
+        gsap.from(".enter", {
+          opacity: 0,
+          duration: 0.5,
+          delay: 0.1,
+          stagger: 0.12,
+          skewY: 6,
+          y: 80,
+          ease: Power4.easeOut,
+        })
+      },
+    },
+
+    mounted() {
+      this.enter()
+    },
+
+    beforeDestroy() {
+      this.$refs.index.style.cssText = `
+        opacity: 0;
+        transition: opacity 300ms ease;
+      `
+    },
+
     //     methods: {
     //       handleScroll() {
     //         const observerOptions = {

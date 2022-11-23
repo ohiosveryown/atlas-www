@@ -1,63 +1,52 @@
 <template>
-  <div class="app width">
+  <div ref="index" class="app-feature width">
+    <img
+      src="https://res.cloudinary.com/da32ufmnf/image/upload/v1669129127/atlas-refresh/features/i5zz7nglrnrfpss86ae8.png"
+      alt=""
+      class="enter icon"
+    />
     <header-md
-      class="tac page-header"
+      class="enter tac page-header"
       heading="Help Center"
       subheading="The fastest way to create AI chatbots on your
       own terms and without coding."
     />
 
-    <main class="width">Main...</main>
+    <main class="enter width">Main...</main>
   </div>
 </template>
 
 <style lang="scss" scoped>
   @import "~static/style/grid.scss";
-
-  .page-header {
-    @include breakpoint(md) {
-      margin: 6.4rem auto 2.4rem;
-      width: grid-width(6);
-    }
-  }
-
-  main {
-    position: relative;
-    margin: 0 auto;
-    column-count: 1;
-
-    @include breakpoint(sm) {
-      margin-top: 9.6rem;
-      column-count: 2;
-      column-gap: 2.4rem;
-    }
-
-    @include breakpoint(mdl) {
-      column-count: 3;
-      column-gap: 2.4rem;
-    }
-  }
-
-  section.icon-wrapper {
-    margin: 0 auto;
-
-    @include breakpoint(md) {
-      width: grid-width(6);
-    }
-  }
-
-  ul.icons {
-    display: flex;
-    justify-content: center;
-  }
-
-  .icon {
-    width: 88px;
-  }
 </style>
 
 <script>
   export default {
+    layout: "feature-detail",
+    //     methods: {
+    //       enter() {
+    //         gsap.from(".enter", {
+    //           opacity: 0,
+    //           duration: 0.5,
+    //           delay: 0.1,
+    //           stagger: 0.12,
+    //           skewY: 6,
+    //           y: 80,
+    //           ease: Power4.easeOut,
+    //         })
+    //       },
+    //     },
+    //
+    //     mounted() {
+    //       this.enter()
+    //     },
+    //
+    //     beforeDestroy() {
+    //       this.$refs.index.style.cssText = `
+    //           opacity: 0;
+    //           transition: opacity 300ms ease;
+    //         `
+    //     },
     //     methods: {
     //       handleScroll() {
     //         const observerOptions = {

@@ -1,6 +1,7 @@
 <template>
   <div ref="index" class="app">
     <header-lg
+      class="enter"
       heading="Give your customers superhuman support"
       subheading="Atlas is a blazingly fast, modern support platform, helping identify and diagnose customer experience and interaction."
     />
@@ -15,11 +16,12 @@
 
       <section class="platform">
         <header-md
+          class="enter"
           heading="A fully integrated suite of support products"
           subheading="All of the best-in-class support tools, built specifically for support teams."
         />
 
-        <feature-grid />
+        <feature-grid class="enter" />
       </section>
 
       <section class="customer-centric tac">
@@ -113,6 +115,18 @@
 <script>
   export default {
     methods: {
+      enter() {
+        gsap.from(".enter", {
+          opacity: 0,
+          duration: 1.2,
+          delay: 0.15,
+          stagger: 0.15,
+          skewY: 10,
+          y: 120,
+          ease: Power4.easeOut,
+        })
+      },
+
       handleScroll() {
         const observerOptions = {
           root: null,

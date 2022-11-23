@@ -1,7 +1,7 @@
 <template>
   <header class="width tac">
-    <h1 class="enter inter fs-xxl">{{ heading }}</h1>
-    <h2 class="enter founders fs-lg">
+    <h1 class="inter fs-xxl">{{ heading }}</h1>
+    <h2 class="founders fs-lg">
       {{ subheading }}
     </h2>
   </header>
