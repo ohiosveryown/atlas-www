@@ -20,17 +20,8 @@
     main {
       position: relative;
       margin: 0 auto;
-      column-count: 1;
-
-      @include breakpoint(sm) {
-        margin-top: 9.6rem;
-        column-count: 2;
-        column-gap: 2.4rem;
-      }
-
       @include breakpoint(mdl) {
-        column-count: 3;
-        column-gap: 2.4rem;
+        margin-top: 9.6rem;
       }
     }
 
@@ -38,34 +29,53 @@
       margin: 6.4rem auto 2.4rem;
       width: 88px;
     }
+
+    .hero {
+      * {
+        border-radius: 8px;
+      }
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 6.4rem;
+      background: linear-gradient(
+        252deg,
+        rgba(19, 15, 35, 0.88) 0%,
+        rgba(69, 58, 104, 0.88) 47.19%,
+        rgba(38, 32, 52, 0.88) 98%
+      );
+
+      @include breakpoint(md) {
+        margin-bottom: 5.6rem;
+      }
+    }
+
+    .hero-crop {
+      @include breakpoint(md) {
+        max-height: 64rem;
+      }
+    }
+
+    article {
+      margin: 0 auto 4rem;
+      @include breakpoint(md) {
+        width: grid-width(7.2);
+      }
+    }
+
+    header {
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 1.2rem;
+    }
   }
 </style>
 
 <script>
-  export default {
-    methods: {
-      enter() {
-        gsap.from(".enter", {
-          opacity: 0,
-          duration: 0.5,
-          delay: 0.1,
-          stagger: 0.12,
-          skewY: 6,
-          y: 80,
-          ease: Power4.easeOut,
-        })
-      },
-    },
-
-    mounted() {
-      this.enter()
-    },
-
-    beforeDestroy() {
-      this.$refs.index.style.cssText = `
-          opacity: 0;
-          transition: opacity 300ms ease;
-        `
-    },
-  }
+  export default {}
 </script>

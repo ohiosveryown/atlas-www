@@ -248,35 +248,5 @@
           transition: opacity 300ms ease;
         `
     },
-
-    //     methods: {
-    //       handleScroll() {
-    //         const observerOptions = {
-    //           root: null,
-    //           threshold: 0,
-    //           rootMargin: "0px 0px -240px 0px",
-    //         }
-    //
-    //         const observerCallback = (entries, observer) => {
-    //           entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
-    //               entry.target.classList.add("active")
-    //             }
-    //           })
-    //         }
-    //
-    //         const observer = new IntersectionObserver(
-    //           observerCallback,
-    //           observerOptions
-    //         )
-    //
-    //         const targets = document.querySelectorAll(".scroll-target")
-    //         targets.forEach((e) => observer.observe(e))
-    //       },
-    //     },
-    //
-    //     mounted() {
-    //       this.handleScroll()
-    //     },
   }
 </script>
