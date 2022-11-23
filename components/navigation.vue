@@ -57,8 +57,8 @@
       padding: 0;
       height: 48px;
       border-bottom: 0.5px solid rgba(255, 255, 255, 0.24);
-      background: linear-gradient(180deg, #05020d 0%, rgba(5, 2, 13, 0) 100%);
-      backdrop-filter: blur(12px);
+      background: linear-gradient(#05020d, rgba(5, 2, 13, 0.4));
+      backdrop-filter: blur(22px);
     }
   }
 

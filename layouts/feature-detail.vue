@@ -52,6 +52,10 @@
 
     .hero-crop {
       @include breakpoint(md) {
+        max-height: 56rem;
+      }
+
+      @include breakpoint(lg) {
         max-height: 64rem;
       }
     }
@@ -65,7 +69,7 @@
 
     header {
       margin-bottom: 1.2rem;
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
 
     p {
