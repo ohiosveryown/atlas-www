@@ -1,12 +1,12 @@
 <template>
-  <div class="app width">
+  <div ref="index" class="app width">
     <header-md
-      class="tac page-header"
+      class="enter tac page-header"
       heading="Features"
       subheading="A fully integrated suite of support products."
     />
 
-    <section class="icon-wrapper">
+    <section class="enter icon-wrapper">
       <ul class="icons">
         <li>
           <img
@@ -100,15 +100,18 @@
       </ul>
     </section>
 
-    <main class="width">
-      <card
-        class="card"
-        icon="📼"
-        heading="pixel perfect replay"
-        subheading="A video is worth a thousand words."
-        product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668995137/atlas-refresh/index/p3k5m2qclpvpg2iqnl5w.png"
-        bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
-      />
+    <main class="enter width">
+      <nuxt-link to="/help-center">
+        <card
+          class="card"
+          icon="🛟"
+          heading="help center"
+          subheading="The fastest way to create AI chatbots on your
+          own terms and without coding."
+          product="https://res.cloudinary.com/da32ufmnf/image/upload/v1669133198/atlas-refresh/features/vunfgnwlg4n9bjiclvga.png"
+          bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1668997224/atlas-refresh/index/ausczy3mh1ouhwztp4wd.png"
+        />
+      </nuxt-link>
 
       <card
         class="card"
@@ -143,7 +146,7 @@
         icon="📼"
         heading="pixel perfect replay"
         subheading="A video is worth a thousand words. Let your customers."
-        product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668995137/atlas-refresh/index/p3k5m2qclpvpg2iqnl5w.png"
+        product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668998043/atlas-refresh/index/hgivx3e0ar1mqas1obtv.png"
         bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
       />
 
@@ -153,7 +156,7 @@
         heading="pixel perfect replay"
         subheading="A video is worth a thousand words. Let your customers show you rather
         then tell you with session recording."
-        product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668995137/atlas-refresh/index/p3k5m2qclpvpg2iqnl5w.png"
+        product="https://res.cloudinary.com/da32ufmnf/image/upload/v1668998043/atlas-refresh/index/hgivx3e0ar1mqas1obtv.png"
         bg="https://res.cloudinary.com/da32ufmnf/image/upload/v1645805170/atlas/f8kyzjyzmdpcftqd0bmc.png"
       />
     </main>
@@ -174,7 +177,6 @@
     position: relative;
     margin: 0 auto;
     column-count: 1;
-    column-gap: 2.4rem;
 
     @include breakpoint(sm) {
       margin-top: 9.6rem;
@@ -192,6 +194,14 @@
     break-inside: avoid;
     margin-bottom: 3.2rem;
     padding: 2rem;
+    transition: 300ms ease transform;
+    will-change: transform;
+  }
+
+  @media (pointer: fine) {
+    .card:hover {
+      transform: scale(1.02);
+    }
   }
 
   section.icon-wrapper {
@@ -214,6 +224,31 @@
 
 <script>
   export default {
+    beforeDestroy() {
+      this.$refs.index.style.cssText = `
+          opacity: 0;
+          transition: opacity 300ms ease;
+        `
+    },
+
+    methods: {
+      enter() {
+        gsap.from(".enter", {
+          opacity: 0,
+          duration: 0.5,
+          delay: 0.1,
+          stagger: 0.12,
+          skewY: 6,
+          y: 80,
+          ease: Power4.easeOut,
+        })
+      },
+    },
+
+    mounted() {
+      this.enter()
+    },
+
     //     methods: {
     //       handleScroll() {
     //         const observerOptions = {

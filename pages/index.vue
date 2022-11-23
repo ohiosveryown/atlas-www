@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div ref="index" class="app">
     <header-lg
       heading="Give your customers superhuman support"
       subheading="Atlas is a blazingly fast, modern support platform, helping identify and diagnose customer experience and interaction."
@@ -136,6 +136,13 @@
         const targets = document.querySelectorAll(".scroll-target")
         targets.forEach((e) => observer.observe(e))
       },
+    },
+
+    beforeDestroy() {
+      this.$refs.index.style.cssText = `
+          opacity: 0;
+          transition: opacity 300ms ease;
+        `
     },
 
     mounted() {

@@ -18,9 +18,9 @@
   width: 88vw;
 }
 
-// .page-leave-active {
-//   transition: all 0ms ease 700ms;
-// }
+.page-leave-active {
+  transition: all 0ms ease 300ms;
+}
 
 .disable {
   pointer-events: none;
