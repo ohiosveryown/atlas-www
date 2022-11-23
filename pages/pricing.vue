@@ -19,7 +19,7 @@
             <h2 class="inter">Startup</h2>
             <div class="pricing-card-price">
               <h3 class="inter">$30</h3>
-              <span>per seat, per month</span>
+              <span>per seat, per month – min 5 seats</span>
             </div>
           </header>
 
@@ -537,7 +537,7 @@
   .pricing-card {
     align-self: flex-start;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
     background: url("https://res.cloudinary.com/da32ufmnf/image/upload/v1668997224/atlas-refresh/index/ausczy3mh1ouhwztp4wd.png")
       no-repeat center center;
     background-size: cover;
