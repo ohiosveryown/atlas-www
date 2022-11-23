@@ -6,7 +6,7 @@
     </header>
 
     <a href="https://app.getatlas.io/auth/signup"
-      ><button class="button-primary">Sign Up</button></a
+      ><button class="button-primary">Get Started</button></a
     >
 
     <img
